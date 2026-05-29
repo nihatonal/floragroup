@@ -27,7 +27,7 @@ export default function ProcessSection() {
   const t = useTranslations('home.process');
 
   return (
-    <section className="relative overflow-hidden bg-flora-ivory py-20 text-flora-charcoal md:py-24">
+    <section className="relative overflow-hidden bg-flora-ivory pb-20 text-flora-charcoal md:pb-24">
       <Container>
         <div className="grid gap-2 lg:grid-cols-[0.42fr_1fr] lg:items-start">
           <div>

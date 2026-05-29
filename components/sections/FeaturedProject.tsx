@@ -80,19 +80,19 @@ export default function FeaturedProject() {
             </FadeUp>
 
             <FadeUp key={`title-${activeIndex}`} delay={0.05}>
-              <h2 className="font-display text-5xl leading-[0.92] tracking-[-0.05em] md:text-5xl lg:text-6xl">
+              <h2 className="font-display text-4xl leading-[0.92] tracking-[-0.05em] md:text-5xl lg:text-6xl">
                 {t(`projects.${activeProject.key}.title`)}
               </h2>
             </FadeUp>
 
             <FadeUp key={`meta-${activeIndex}`} delay={0.1}>
-              <p className="mt-5 text-[10px] uppercase tracking-luxury text-flora-champagne">
+              <p className="mt-4 text-[10px] uppercase tracking-luxury text-flora-champagne">
                 {t(`projects.${activeProject.key}.location`)}
               </p>
             </FadeUp>
 
             <FadeUp key={`desc-${activeIndex}`} delay={0.15}>
-              <p className="mt-5 max-w-sm text-sm leading-7 text-flora-ivory/72">
+              <p className="mt-8 max-w-sm text-sm leading-7 text-flora-ivory/72">
                 {t(`projects.${activeProject.key}.description`)}
               </p>
             </FadeUp>
@@ -100,14 +100,14 @@ export default function FeaturedProject() {
             <FadeUp key={`cta-${activeIndex}`} delay={0.2}>
               <Link
                 href={`/${locale}/${t("paths.projects")}`}
-                className="group mt-7 inline-flex items-center gap-4 text-[11px] uppercase tracking-[0.18em] text-flora-ivory transition hover:text-flora-champagne"
+                className="group mt-9 mb-5  inline-flex items-center gap-4 text-[11px] uppercase tracking-[0.18em] text-flora-ivory transition hover:text-flora-champagne"
               >
                 {t("cta")}
                 <span className="h-px w-10 bg-current transition-all duration-500 group-hover:w-14" />
               </Link>
             </FadeUp>
 
-            <div className="absolute bottom-10 md:bottom-12 left-0 flex items-center gap-6">
+            <div className="absolute bottom-4 md:bottom-12 left-0 flex items-center gap-6">
               <button
                 type="button"
                 onClick={goPrev}
