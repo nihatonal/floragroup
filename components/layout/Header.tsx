@@ -51,7 +51,11 @@ export default function Header() {
             : "h-16 rounded-full border border-flora-forest/10 bg-flora-ivory/70 px-6 text-flora-forest shadow-soft backdrop-blur-[20px]",
         )}
       >
-        <Link href={`/${locale}`} className="group relative z-[70]">
+        <Link
+          href={`/${locale}`}
+          onClick={() => setIsMenuOpen(false)}
+          className="group relative z-[70]"
+        >
           <span className="block font-display text-xl leading-none tracking-[-0.02em]">
             {t("brand.name")}
           </span>

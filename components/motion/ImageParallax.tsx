@@ -30,7 +30,10 @@ export default function ImageParallax({
     <div ref={ref} className={cn('relative overflow-hidden', className)}>
       <motion.div
         style={{ y }}
-        className={cn('absolute inset-x-0 -top-[12%] h-[124%]', innerClassName)}
+        className={cn(
+          'absolute inset-x-0 -top-[12%] h-[124%] will-change-transform',
+          innerClassName
+        )}
       >
         {children}
       </motion.div>

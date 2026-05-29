@@ -36,14 +36,14 @@ export default function ProcessSection() {
             </FadeUp>
 
             <FadeUp delay={0.08}>
-              <h2 className="max-w-[19ch] font-display text-4xl leading-[0.98] tracking-[-0.045em] md:text-5xl lg:text-6xl">
+              <h2 className="max-w-[17ch] font-display text-4xl leading-[0.98] tracking-[-0.045em] md:text-5xl lg:text-6xl">
                 {t('title')}
               </h2>
             </FadeUp>
           </div>
 
           <Stagger
-            className="mx-auto grid w-full max-w-[280px] gap-0 md:max-w-none md:grid-cols-5 md:items-start"
+            className="mt-4 md:mt-0 mx-auto grid w-full max-w-[280px] gap-0 md:max-w-none md:grid-cols-5 md:items-start"
             staggerDelay={0.08}
           >
             {steps.map((step, index) => {

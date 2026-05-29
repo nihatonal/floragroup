@@ -67,7 +67,7 @@ export default function AboutPreview() {
               className="h-[360px] rounded-tl-[130px] shadow-premium md:h-[380px] md:rounded-tl-[180px] lg:h-[380px] lg:rounded-tl-[220px]"
             >
               <Image
-                src="/images/about-garden.png"
+                src="/images/about-garden.webp"
                 alt={t("imageAlt")}
                 fill
                 quality={100}

@@ -25,7 +25,7 @@ export default function ContactSection() {
       <div className="noise-overlay absolute inset-0 opacity-25" />
       <div className="absolute inset-0">
         <Image
-          src="/images/project-main.png"
+          src="/images/project-main.webp"
           alt=""
           fill
           quality={90}

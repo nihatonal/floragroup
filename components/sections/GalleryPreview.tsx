@@ -12,35 +12,35 @@ import DepthImageCard from "../ui/DepthImageCard";
 
 const galleryImages = [
   {
-    src: "/images/gallery-01.png",
+    src: "/images/gallery-01.webp",
     key: "image1",
     className: "md:col-span-4",
     ratio: "aspect-[4/5]",
     offset: 26,
   },
   {
-    src: "/images/gallery-02.png",
+    src: "/images/gallery-02.webp",
     key: "image2",
     className: "md:col-span-3 md:mb-16",
     ratio: "aspect-[4/3]",
     offset: 18,
   },
   {
-    src: "/images/gallery-03.png",
+    src: "/images/gallery-03.webp",
     key: "image3",
     className: "md:col-span-5",
     ratio: "aspect-[4/5]",
     offset: 30,
   },
   {
-    src: "/images/gallery-04.png",
+    src: "/images/gallery-04.webp",
     key: "image4",
     className: "md:col-span-5 md:ml-20",
     ratio: "aspect-[4/3]",
     offset: 22,
   },
   {
-    src: "/images/gallery-05.png",
+    src: "/images/gallery-05.webp",
     key: "image5",
     className: "md:col-span-4 md:mb-20",
     ratio: "aspect-[4/3]",
@@ -61,7 +61,7 @@ export default function GalleryPreview() {
           </FadeUp>
 
           <FadeUp delay={0.08}>
-            <h2 className="max-w-full font-display text-5xl leading-[0.95] tracking-[-0.05em] md:text-7xl">
+            <h2 className="w-[12ch] md:w-full font-display text-5xl leading-[0.95] tracking-[-0.05em] md:text-7xl">
               {t("title")}
             </h2>
           </FadeUp>
@@ -95,6 +95,18 @@ export default function GalleryPreview() {
             </StaggerItem>
           ))}
         </Stagger>
+        <FadeUp delay={0.16} className="text-right mt-6">
+          <Link
+            href={`/${locale}/${t("paths.gallery")}`}
+            className="group mt-6 inline-flex items-center gap-4 text-[11px] uppercase tracking-[0.18em] transition hover:text-flora-leaf md:mt-0 md:justify-self-end"
+          >
+            {t("cta")}
+            <ArrowUpRight
+              size={16}
+              className="transition duration-500 group-hover:translate-x-1 group-hover:-translate-y-1"
+            />
+          </Link>
+        </FadeUp>
       </Container>
     </section>
   );
