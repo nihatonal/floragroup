@@ -1,0 +1,232 @@
+{
+  "header": {
+    "brand": {
+      "name": "Flora Adında",
+      "tagline": "Landscape Design"
+    },
+    "nav": {
+      "about": "Hakkımızda",
+      "projects": "Projelerimiz",
+      "gallery": "Galeri",
+      "contact": "İletişim"
+    },
+    "paths": {
+      "about": "hakkimizda",
+      "projects": "projelerimiz",
+      "gallery": "galeri"
+    },
+    "menu": {
+      "open": "Menüyü aç",
+      "close": "Kapat",
+      "note": "Premium Peyzaj Stüdyosu"
+    }
+  },
+  "footer": {
+    "eyebrow": "Flora Adında",
+    "statement": {
+      "line1": "Doğa zamansız",
+      "line2": "mekanları hak eder."
+    },
+    "description": "Premium peyzaj tasarımı, doğal yaşam alanları ve zamansız dış mekan deneyimleri yaratıyoruz.",
+    "brand": {
+      "name": "Flora Adında",
+      "tagline": "Landscape Design Studio"
+    },
+    "navigation": {
+      "title": "Navigasyon",
+      "about": "Hakkımızda",
+      "projects": "Projelerimiz",
+      "gallery": "Galeri"
+    },
+    "contact": {
+      "title": "İletişim",
+      "phone": "+90 212 123 45 67",
+      "phoneHref": "tel:+902121234567",
+      "email": "info@floraadinda.com",
+      "emailHref": "mailto:info@floraadinda.com",
+      "location": "İstanbul / Türkiye"
+    },
+    "cta": "İletişime Geç",
+    "copyright": "© 2026 Flora Adında. Tüm hakları saklıdır.",
+    "services": {
+      "title": "Hizmetler",
+      "landscape": "Peyzaj Tasarımı",
+      "application": "Uygulama",
+      "maintenance": "Bakım Hizmetleri",
+      "consulting": "Danışmanlık"
+    }
+  },
+
+  "home": {
+    "hero": {
+      "eyebrow": "Premium Peyzaj & Flora Tasarımı",
+      "title": "Doğayla uyum içinde zamansız mekanlar.",
+      "description": "Peyzaj mimarisi, bahçe tasarımı ve uygulama hizmetleriyle yaşam alanlarınıza doğal bir zarafet katıyoruz.",
+      "ctaPrimary": "Projeleri Keşfet",
+      "ctaSecondary": "İletişime Geç",
+      "scroll": "Scroll",
+      "imageAlt": "",
+      "paths": {
+        "projects": "projelerimiz"
+      }
+    },
+    "stats": {
+      "years": "Yıllık Deneyim",
+      "projects": "Tamamlanan Proje",
+      "satisfaction": "Müşteri Memnuniyeti",
+      "team": "Uzman Ekip"
+    },
+    "about": {
+      "label": "Hakkımızda",
+      "title": "Doğanın zarafetini yaşam alanlarına taşıyoruz.",
+      "description": "Her projede bulunduğu çevreye saygılı, sürdürülebilir ve estetik çözümler üretiyoruz. Doğal malzemeler, modern peyzaj anlayışı ve uzman ekibimizle yaşam alanlarını yeniden tasarlıyoruz.",
+      "cta": "Daha Fazla",
+      "imageAlt": "Doğanın zarafetini yaşam alanlarına taşıyoruz",
+      "paths": {
+        "about": "hakkimizda"
+      },
+      "features": {
+        "sustainable": {
+          "title": "Sürdürülebilir Tasarım",
+          "description": "Doğaya saygılı, uzun ömürlü ve çevreyle uyumlu peyzaj çözümleri."
+        },
+        "custom": {
+          "title": "Özgün Yaklaşım",
+          "description": "Her müşteriye ve yaşam alanına özel tasarım dili oluşturuyoruz."
+        },
+        "implementation": {
+          "title": "Premium Uygulama",
+          "description": "Yüksek kalite standartlarında profesyonel uygulama süreçleri."
+        },
+        "maintenance": {
+          "title": "Bakım & Destek",
+          "description": "Peyzaj alanlarının uzun yıllar canlı kalması için bakım hizmetleri."
+        }
+      }
+    },
+    "featuredProject": {
+      "label": "Seçilmiş Proje",
+      "cta": "Projeyi İncele",
+      "paths": {
+        "projects": "projelerimiz"
+      },
+      "controls": {
+        "prev": "Önceki proje",
+        "next": "Sonraki proje",
+        "goTo": "Projeye git"
+      },
+      "projects": {
+        "kemer": {
+          "title": "Kemer Country Bahçe Tasarımı",
+          "location": "İstanbul",
+          "description": "Doğal dokuyu modern yaşamla buluşturan, sürdürülebilir ve zamansız bir bahçe tasarımı.",
+          "imageAlt": "Kemer Country bahçe tasarımı"
+        },
+        "villa": {
+          "title": "Villa Peyzaj Projesi",
+          "location": "İzmir",
+          "description": "Özel yaşam alanları için zarif, sakin ve fonksiyonel peyzaj çözümleri.",
+          "imageAlt": "Villa peyzaj projesi"
+        },
+        "garden": {
+          "title": "Doğal Bahçe Uygulaması",
+          "location": "Ankara",
+          "description": "Mevsimsel doku, katmanlı yeşil alanlar ve doğal yürüyüş rotaları.",
+          "imageAlt": "Doğal bahçe uygulaması"
+        },
+        "terrace": {
+          "title": "Teras Bahçesi Tasarımı",
+          "location": "Bodrum",
+          "description": "Kompakt alanlarda doğal atmosfer ve premium dış mekan konforu.",
+          "imageAlt": "Teras bahçesi tasarımı"
+        }
+      }
+    },
+    "process": {
+      "label": "Sürecimiz",
+      "title": "Doğru planlama, kusursuz sonuçlar.",
+      "description": "Keşiften bakıma kadar her adımı kontrollü ve şeffaf bir süreçle yönetiriz.",
+      "steps": {
+        "discovery": {
+          "title": "Keşif & Analiz",
+          "description": "Alanı inceler, ihtiyaçları belirleriz."
+        },
+        "design": {
+          "title": "Tasarım",
+          "description": "Size özel konsept ve peyzaj tasarımı oluştururuz."
+        },
+        "planning": {
+          "title": "Planlama",
+          "description": "Malzeme, bitki ve zamanlamayı netleştiririz."
+        },
+        "implementation": {
+          "title": "Uygulama",
+          "description": "Tasarımı sahada hayata geçiririz."
+        },
+        "support": {
+          "title": "Bakım & Destek",
+          "description": "Alanların sürekliliği için destek sağlarız."
+        }
+      }
+    },
+    "whyChooseUs": {
+      "label": "Flora Adında Farkı",
+      "title": "Neden bizi tercih ediyorlar?",
+      "description": "Tasarım, uygulama ve bakım sürecini tek bir estetik çizgide birleştirerek güven veren, uzun ömürlü peyzaj alanları oluşturuyoruz.",
+      "items": {
+        "nature": {
+          "title": "Doğaya Saygı",
+          "description": "Her projede doğal dengeyi, yerel dokuyu ve sürdürülebilirliği önceliklendiririz."
+        },
+        "quality": {
+          "title": "Kaliteli Uygulama",
+          "description": "Malzeme seçiminden saha uygulamasına kadar premium standartlarda ilerleriz."
+        },
+        "aesthetic": {
+          "title": "Zamansız Estetik",
+          "description": "Trendlerden bağımsız, yıllar içinde değerini koruyan dış mekanlar tasarlarız."
+        },
+        "team": {
+          "title": "Uzman Ekip",
+          "description": "Tasarım, bitki seçimi, uygulama ve bakım süreçlerinde deneyimli ekiplerle çalışırız."
+        }
+      }
+    },
+    "gallery": {
+      "label": "Galeriden Kareler",
+      "title": "Doğadan ilham alan mekanlar.",
+      "cta": "Tüm Galeriyi Gör",
+      "paths": {
+        "gallery": "galeri"
+      },
+      "images": {
+        "image1": "Doğal peyzaj galeri görseli",
+        "image2": "Bahçe tasarımı galeri görseli",
+        "image3": "Premium dış mekan yaşam alanı",
+        "image4": "Yeşil peyzaj uygulaması",
+        "image5": "Doğal bahçe atmosferi"
+      }
+    },
+    "contact": {
+      "label": "İletişim",
+      "title": "Hayalinizdeki peyzajı birlikte tasarlayalım.",
+      "description": "Villa bahçesi, otel peyzajı, kış bahçesi veya dış mekan yaşam alanı için projenizi birlikte değerlendirelim.",
+      "cta": "Teklif Al",
+      "ctaHref": "mailto:info@floraadinda.com",
+      "items": {
+        "phone": {
+          "label": "Telefon",
+          "value": "+90 212 123 45 67"
+        },
+        "email": {
+          "label": "E-posta",
+          "value": "info@floraadinda.com"
+        },
+        "location": {
+          "label": "Konum",
+          "value": "İstanbul / Türkiye"
+        }
+      }
+    }
+  }
+}

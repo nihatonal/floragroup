@@ -1,0 +1,231 @@
+{
+  "header": {
+    "brand": {
+      "name": "Flora Adında",
+      "tagline": "Landscape Design"
+    },
+    "nav": {
+      "about": "About",
+      "projects": "Projects",
+      "gallery": "Gallery",
+      "contact": "Contact"
+    },
+    "paths": {
+      "about": "about",
+      "projects": "projects",
+      "gallery": "gallery"
+    },
+    "menu": {
+      "open": "Open menu",
+      "close": "Close",
+      "note": "Premium Landscape Studio"
+    }
+  },
+  "footer": {
+    "eyebrow": "Flora Adında",
+    "statement": {
+      "line1": "Nature deserves",
+      "line2": "timeless spaces."
+    },
+    "description": "We create premium landscape design, natural living areas and timeless outdoor experiences.",
+    "brand": {
+      "name": "Flora Adında",
+      "tagline": "Landscape Design Studio"
+    },
+    "navigation": {
+      "title": "Navigation",
+      "about": "About",
+      "projects": "Projects",
+      "gallery": "Gallery"
+    },
+    "services": {
+      "title": "Services",
+      "landscape": "Landscape Design",
+      "application": "Implementation",
+      "maintenance": "Maintenance Services",
+      "consulting": "Consulting"
+    },
+    "contact": {
+      "title": "Contact",
+      "phone": "+90 212 123 45 67",
+      "phoneHref": "tel:+902121234567",
+      "email": "info@floraadinda.com",
+      "emailHref": "mailto:info@floraadinda.com",
+      "location": "Istanbul / Türkiye"
+    },
+    "cta": "Contact Us",
+    "copyright": "© 2026 Flora Adında. All rights reserved."
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Premium Landscape & Flora Design",
+      "title": "Timeless spaces in harmony with nature.",
+      "description": "We bring natural elegance to living spaces through landscape architecture, garden design and implementation services.",
+      "ctaPrimary": "Explore Projects",
+      "imageAlt": "",
+      "ctaSecondary": "Contact Us",
+      "scroll": "Scroll",
+      "paths": {
+        "projects": "projects"
+      }
+    },
+    "stats": {
+      "years": "Years Experience",
+      "projects": "Completed Projects",
+      "satisfaction": "Client Satisfaction",
+      "team": "Expert Team"
+    },
+    "about": {
+      "label": "About",
+      "title": "We bring nature’s elegance into living spaces.",
+      "description": "In every project, we create sustainable and aesthetic solutions that respect their environment. Through natural materials and modern landscape design, we redefine outdoor living.",
+      "cta": "Learn More",
+      "imageAlt": "We bring nature’s elegance into living spaces",
+      "paths": {
+        "about": "about"
+      },
+      "features": {
+        "sustainable": {
+          "title": "Sustainable Design",
+          "description": "Long-lasting and environmentally conscious landscape solutions."
+        },
+        "custom": {
+          "title": "Custom Approach",
+          "description": "A unique design language tailored to every client and space."
+        },
+        "implementation": {
+          "title": "Premium Execution",
+          "description": "Professional implementation processes with the highest standards."
+        },
+        "maintenance": {
+          "title": "Maintenance & Support",
+          "description": "Ongoing support to keep outdoor spaces vibrant for years."
+        }
+      }
+    },
+    "featuredProject": {
+      "label": "Featured Project",
+      "cta": "View Project",
+      "paths": {
+        "projects": "projects"
+      },
+      "controls": {
+        "prev": "Previous project",
+        "next": "Next project",
+        "goTo": "Go to project"
+      },
+      "projects": {
+        "kemer": {
+          "title": "Kemer Country Landscape Design",
+          "location": "Istanbul",
+          "description": "A timeless and sustainable garden design blending natural textures with contemporary living.",
+          "imageAlt": "Kemer Country landscape project"
+        },
+        "villa": {
+          "title": "Private Villa Landscape",
+          "location": "Izmir",
+          "description": "Elegant, calm and functional landscape solutions crafted for refined outdoor living.",
+          "imageAlt": "Private villa landscape project"
+        },
+        "garden": {
+          "title": "Natural Garden Concept",
+          "location": "Ankara",
+          "description": "Layered greenery, seasonal textures and immersive walking paths inspired by nature.",
+          "imageAlt": "Natural garden concept"
+        },
+        "terrace": {
+          "title": "Terrace Garden Design",
+          "location": "Bodrum",
+          "description": "Premium outdoor comfort and atmospheric greenery designed for compact living spaces.",
+          "imageAlt": "Terrace garden design"
+        }
+      }
+    },
+    "process": {
+      "label": "Our Process",
+      "title": "Precise planning, flawless results.",
+      "description": "From discovery to care, every step is managed through a clear and controlled process.",
+      "steps": {
+        "discovery": {
+          "title": "Discovery & Analysis",
+          "description": "We study the site and define the needs."
+        },
+        "design": {
+          "title": "Design",
+          "description": "We create a tailored landscape concept."
+        },
+        "planning": {
+          "title": "Planning",
+          "description": "We clarify materials, plants and timing."
+        },
+        "implementation": {
+          "title": "Execution",
+          "description": "We bring the design to life on site."
+        },
+        "support": {
+          "title": "Care & Support",
+          "description": "We support the long-term life of each space."
+        }
+      }
+    },
+    "whyChooseUs": {
+      "label": "The Flora Difference",
+      "title": "Why clients choose us",
+      "description": "We connect design, implementation and care through a single aesthetic vision to create reliable and long-lasting landscapes.",
+      "items": {
+        "nature": {
+          "title": "Respect for Nature",
+          "description": "Every project prioritizes natural balance, local context and sustainability."
+        },
+        "quality": {
+          "title": "Premium Execution",
+          "description": "From material selection to on-site implementation, we work with refined standards."
+        },
+        "aesthetic": {
+          "title": "Timeless Aesthetic",
+          "description": "We design outdoor spaces that remain valuable beyond short-lived trends."
+        },
+        "team": {
+          "title": "Expert Team",
+          "description": "We work with experienced teams across design, planting, implementation and care."
+        }
+      }
+    },
+    "gallery": {
+      "label": "From The Gallery",
+      "title": "Spaces inspired by nature.",
+      "cta": "View Full Gallery",
+      "paths": {
+        "gallery": "gallery"
+      },
+      "images": {
+        "image1": "Natural landscape gallery image",
+        "image2": "Garden design gallery image",
+        "image3": "Premium outdoor living space",
+        "image4": "Green landscape implementation",
+        "image5": "Natural garden atmosphere"
+      }
+    },
+    "contact": {
+      "label": "Contact",
+      "title": "Let’s design your dream landscape together.",
+      "description": "Whether it is a villa garden, hotel landscape, winter garden or outdoor living space, let’s shape your project together.",
+      "cta": "Request Proposal",
+      "ctaHref": "mailto:info@floraadinda.com",
+      "items": {
+        "phone": {
+          "label": "Phone",
+          "value": "+90 212 123 45 67"
+        },
+        "email": {
+          "label": "Email",
+          "value": "info@floraadinda.com"
+        },
+        "location": {
+          "label": "Location",
+          "value": "Istanbul / Türkiye"
+        }
+      }
+    }
+  }
+}
