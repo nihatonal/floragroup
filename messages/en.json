@@ -226,6 +226,10 @@
           "value": "Istanbul / Türkiye"
         }
       }
+    },
+    "partners": {
+      "label": "Partners",
+      "title": "Trusted collaborations."
     }
   }
 }

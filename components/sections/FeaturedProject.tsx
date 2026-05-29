@@ -80,7 +80,7 @@ export default function FeaturedProject() {
             </FadeUp>
 
             <FadeUp key={`title-${activeIndex}`} delay={0.05}>
-              <h2 className="font-display text-5xl leading-[0.92] tracking-[-0.05em] md:text-6xl">
+              <h2 className="font-display text-5xl leading-[0.92] tracking-[-0.05em] md:text-5xl lg:text-6xl">
                 {t(`projects.${activeProject.key}.title`)}
               </h2>
             </FadeUp>

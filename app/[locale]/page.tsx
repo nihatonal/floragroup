@@ -6,6 +6,7 @@ import ProcessSection from '@/components/sections/ProcessSection';
 import WhyChooseUs from '@/components/sections/WhyChooseUs';
 import GalleryPreview from '@/components/sections/GalleryPreview';
 import ContactSection from '@/components/sections/ContactSection';
+import PartnersMarquee from '@/components/sections/PartnersMarquee';
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <StatsBand />
       <AboutPreview />
       <FeaturedProject />
+      <PartnersMarquee />
       <ProcessSection />
       <WhyChooseUs />
       <GalleryPreview />

@@ -227,6 +227,10 @@
           "value": "İstanbul / Türkiye"
         }
       }
+    },
+    "partners": {
+      "label": "Çalıştığımız Markalar",
+      "title": "Güven veren iş birlikleri."
     }
   }
 }

@@ -29,14 +29,14 @@ export default function ProcessSection() {
   return (
     <section className="relative overflow-hidden bg-flora-ivory py-20 text-flora-charcoal md:py-24">
       <Container>
-        <div className="grid gap-2 lg:grid-cols-[0.38fr_1fr] lg:items-start">
+        <div className="grid gap-2 lg:grid-cols-[0.42fr_1fr] lg:items-start">
           <div>
             <FadeUp>
               <SectionLabel>{t('label')}</SectionLabel>
             </FadeUp>
 
             <FadeUp delay={0.08}>
-              <h2 className="max-w-[15ch] font-display text-4xl leading-[0.98] tracking-[-0.045em] md:text-5xl">
+              <h2 className="max-w-[19ch] font-display text-4xl leading-[0.98] tracking-[-0.045em] md:text-5xl lg:text-6xl">
                 {t('title')}
               </h2>
             </FadeUp>

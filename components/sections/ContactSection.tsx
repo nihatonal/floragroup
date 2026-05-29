@@ -19,23 +19,22 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-flora-night py-16 text-flora-ivory md:py-20"
+      className="relative overflow-hidden bg-flora-night py-16 text-flora-ivory md:py-24"
     >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_40%,rgba(79,143,70,0.18),transparent_34%)]" />
       <div className="noise-overlay absolute inset-0 opacity-25" />
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0">
         <Image
           src="/images/project-main.png"
           alt=""
           fill
           quality={90}
-          className="object-cover scale-110 opacity-25"
+          sizes="100vw"
+          className="scale-110 object-cover opacity-45"
         />
-
-        {/* <div className="absolute inset-0 bg-flora-night/65" />
-
-        <div className="absolute inset-0 bg-gradient-to-r from-flora-night via-flora-night/85 to-flora-night" /> */}
       </div>
+
+      <div className="noise-overlay absolute inset-0 opacity-25" />
 
       <Container className="relative">
         <div className="grid gap-10 md:grid-cols-[1fr_0.34fr] md:items-center">
