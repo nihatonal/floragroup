@@ -14,7 +14,7 @@ export default function AboutHero() {
     <section className="relative overflow-hidden bg-flora-ivory text-flora-forest md:min-h-[100svh]">
       {/* Mobile layout */}
       <div className="md:hidden">
-        <div className="relative h-[380px] overflow-hidden">
+        <div className="relative h-[320px] overflow-hidden">
           <Image
             src="/images/about-hero-mobile.webp"
             alt={t("imageAlt")}
@@ -22,7 +22,7 @@ export default function AboutHero() {
             priority
             quality={100}
             sizes="(max-width: 767px) 100vw, 0vw"
-            className="object-cover object-center saturate-[1.04] contrast-[1.02]"
+            className="object-cover object-[25%_32%] saturate-[1.04] contrast-[1.02]"
           />
 
           <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-flora-ivory via-flora-ivory/75 to-transparent" />
