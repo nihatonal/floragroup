@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import Container from "@/components/ui/Container";
 import FadeUp from "@/components/motion/FadeUp";
 import Image from "next/image";
+import ImageParallax from "../motion/ImageParallax";
 
 const contactItems = [
   { key: "phone", icon: Phone },
@@ -24,14 +25,16 @@ export default function ContactSection() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_40%,rgba(79,143,70,0.18),transparent_34%)]" />
       <div className="noise-overlay absolute inset-0 opacity-25" />
       <div className="absolute inset-0">
-        <Image
-          src="/images/project-main.webp"
-          alt=""
-          fill
-          quality={90}
-          sizes="100vw"
-          className="scale-110 object-cover opacity-45"
-        />
+        <ImageParallax offset={24} className="absolute inset-0">
+          <Image
+            src="/images/project-main.webp"
+            alt=""
+            fill
+            quality={90}
+            sizes="100vw"
+            className="scale-110 object-cover opacity-45"
+          />
+        </ImageParallax>
       </div>
 
       <div className="noise-overlay absolute inset-0 opacity-25" />

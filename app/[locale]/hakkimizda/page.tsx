@@ -1,8 +1,25 @@
+import AboutApproach from "@/components/sections/about/AboutApproach";
+import AboutExpertise from "@/components/sections/about/AboutExpertise";
+import AboutFinalCTA from "@/components/sections/about/AboutFinalCTA";
+import AboutFounderQuote from "@/components/sections/about/AboutFounderQuote";
+import AboutHero from "@/components/sections/about/AboutHero";
+import AboutStats from "@/components/sections/about/AboutStats";
+import AboutStory from "@/components/sections/about/AboutStory";
+import AboutStudioGallery from "@/components/sections/about/AboutStudioGallery";
+import AboutValues from "@/components/sections/about/AboutValues";
+
 export default function AboutPage() {
   return (
-    <main className="min-h-screen container-page py-16">
-      <h1 className="text-4xl font-bold">About Us</h1>
-      <p className="mt-4 text-lg text-muted-foreground">Learn more about Mira Bistro.</p>
-    </main>
+    <>
+      <AboutHero />
+      <AboutStory />
+      <AboutStats />
+      <AboutApproach />
+      <AboutFounderQuote />
+      <AboutValues />
+      <AboutExpertise />
+      <AboutStudioGallery />
+      <AboutFinalCTA/>
+    </>
   );
 }

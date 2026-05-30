@@ -40,11 +40,11 @@
     },
     "contact": {
       "title": "İletişim",
-      "phone": "+90 212 123 45 67",
-      "phoneHref": "tel:+902121234567",
+      "phone": "+90 232 123 45 67",
+      "phoneHref": "tel:+902321234567",
       "email": "info@floraadinda.com",
       "emailHref": "mailto:info@floraadinda.com",
-      "location": "İstanbul / Türkiye"
+      "location": "İzmir / Türkiye"
     },
     "cta": "İletişime Geç",
     "copyright": "© 2026 Flora Adında. Tüm hakları saklıdır.",
@@ -216,7 +216,7 @@
       "items": {
         "phone": {
           "label": "Telefon",
-          "value": "+90 212 123 45 67"
+          "value": "+90 232 123 45 67"
         },
         "email": {
           "label": "E-posta",
@@ -231,6 +231,133 @@
     "partners": {
       "label": "Çalıştığımız Markalar",
       "title": "Güven veren iş birlikleri."
+    }
+  },
+  "about": {
+    "hero": {
+      "label": "Hakkımızda",
+      "title": "Doğayla uyumlu, zamansız yaşam alanları tasarlıyoruz.",
+      "description": "Her projede estetik, işlevsellik ve doğaya saygıyı bir araya getirerek insanların yaşam kalitesini artıran mekanlar oluşturuyoruz.",
+      "cta": "Bizi Tanıyın",
+      "imageAlt": "Peyzaj tasarım stüdyosunda proje çizimleri ve doğal detaylar"
+    },
+    "story": {
+      "label": "Hikayemiz",
+      "title": "Doğadan ilham alıyor, insan odaklı tasarlıyoruz.",
+      "paragraph1": "Flora Adında, peyzaj mimarlığı ve bahçe tasarımı alanında doğanın zarafetini yaşam alanlarına taşıyan bir tasarım stüdyosudur.",
+      "paragraph2": "Her projeyi bulunduğu coğrafyanın ruhuna, kullanıcıların ihtiyaçlarına ve estetik beklentilerine göre şekillendirir; sürdürülebilir ve uzun ömürlü çözümler üretiriz.",
+      "cta": "Yaklaşımımız",
+      "imageAlt": "Doğal peyzaj içinde taş yürüyüş yolu ve yemyeşil bahçe"
+    },
+    "stats": {
+      "label": "Sayılarla Flora Adında",
+      "items": {
+        "experience": "Yıllık Tecrübe",
+        "projects": "Tamamlanan Proje",
+        "cities": "Şehirde Uygulama",
+        "satisfaction": "Müşteri Memnuniyeti"
+      }
+    },
+    "approach": {
+      "label": "Tasarım Yaklaşımımız",
+      "items": {
+        "observe": {
+          "title": "Doğayı Okuyoruz",
+          "description": "Mekanın doğal dokusunu, iklimini ve bitki örtüsünü analiz ederek tasarımın temelini oluşturuyoruz."
+        },
+        "understand": {
+          "title": "Mekanı Anlıyoruz",
+          "description": "Kullanım alışkanlıklarını, ihtiyaçları ve mekansal potansiyeli doğru analiz ederek en uygun çözümleri geliştiriyoruz."
+        },
+        "design": {
+          "title": "Yaşamı Tasarlıyoruz",
+          "description": "Estetik, işlevsellik ve sürdürülebilirliği bir araya getirerek zamansız yaşam alanları tasarlıyoruz."
+        }
+      },
+      "vision": {
+        "label": "Vizyonumuz",
+        "title": "Doğayla uyum içinde yaşam kültürünü yaygınlaştırmak.",
+        "description": "Estetik ve sürdürülebilir yaklaşımlarla, gelecek nesillere değer katan yaşam alanları bırakmayı hedefliyoruz."
+      },
+      "mission": {
+        "label": "Misyonumuz",
+        "title": "Her projede en yüksek kaliteli tasarım ve uygulama anlayışıyla fark yaratmak.",
+        "description": "Doğaya, insana ve çevreye duyarlı, fonksiyonel ve zamansız mekanlar tasarlıyoruz."
+      }
+    },
+    "founder": {
+      "label": "Kurucunun Yaklaşımı",
+      "quote": "Peyzaj bizim için yalnızca bitki yerleştirmek değil, bir yaşam deneyimi tasarlamaktır.",
+      "name": "Flora Adında",
+      "role": "Kurucu & Peyzaj Tasarım Ekibi",
+      "imageAlt": "Peyzaj tasarım stüdyosunda çalışan ekip"
+    },
+    "values": {
+      "label": "Değerlerimiz",
+      "title": "Tasarım kararlarımızı yönlendiren ilkeler.",
+      "description": "Her projede estetik görünümün ötesine geçerek uzun ömürlü, sürdürülebilir ve kullanıcıya özel yaşam alanları üretmeyi hedefleriz.",
+      "items": {
+        "nature": {
+          "title": "Doğaya Saygı",
+          "description": "Bulunduğu çevreyle uyumlu, doğal dengeyi koruyan peyzaj çözümleri geliştiririz."
+        },
+        "timeless": {
+          "title": "Zamansız Estetik",
+          "description": "Trendlerden bağımsız, yıllar içinde değerini koruyan mekanlar tasarlarız."
+        },
+        "quality": {
+          "title": "Titiz Uygulama",
+          "description": "Malzeme seçiminden saha uygulamasına kadar her detayı kaliteyle yönetiriz."
+        },
+        "custom": {
+          "title": "Özgün Yaklaşım",
+          "description": "Her alanın karakterine ve kullanıcının yaşam biçimine özel çözümler üretiriz."
+        }
+      }
+    },
+    "expertise": {
+  "label": "Uzmanlık Alanlarımız",
+  "imageAlt": "Premium villa bahçesi ve peyzaj uygulama alanı",
+  "items": {
+    "landscape": {
+      "title": "Peyzaj Tasarımı",
+      "description": "Estetik ve fonksiyonel peyzaj planlamaları"
+    },
+    "residential": {
+      "title": "Bahçe Uygulamaları",
+      "description": "Kaliteli malzeme ve titiz işçilikle uygulama"
+    },
+    "irrigation": {
+      "title": "Sulama Sistemleri",
+      "description": "Verimli, sürdürülebilir sulama çözümleri"
+    },
+    "lighting": {
+      "title": "Aydınlatma Tasarımı",
+      "description": "Mekanlara değer katan ışık çözümleri"
+    },
+    "maintenance": {
+      "title": "Bakım Hizmetleri",
+      "description": "Uzun ömürlü ve sağlıklı yaşam alanları için bakım"
+    }
+  }
+},
+    "studioGallery": {
+      "label": "Atölyeden Kareler",
+      "title": "Fikir, çizim ve uygulama aynı masada buluşur.",
+      "description": "Her proje; keşif, çizim, bitki seçimi ve saha uygulamasıyla bütüncül bir tasarım sürecinden geçer.",
+      "images": {
+        "image1": "Peyzaj tasarım stüdyosunda proje çizimleri",
+        "image2": "Bitki seçimi ve doğal malzeme detayları",
+        "image3": "Bahçe uygulama sürecinden detay",
+        "image4": "Peyzaj ekibinin proje üzerinde çalışması"
+      }
+    },
+    "cta": {
+      "label": "Birlikte Çalışalım",
+      "title": "Hayalinizdeki yaşam alanını birlikte tasarlayalım.",
+      "description": "Doğayla uyumlu, estetik ve uzun ömürlü dış mekanlar için ilk adımı bugün atın.",
+      "button": "Projelerimizi İnceleyin",
+      "imageAlt": "Lüks villa peyzajı ve akşam aydınlatması"
     }
   }
 }
