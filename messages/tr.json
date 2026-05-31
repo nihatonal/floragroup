@@ -13,7 +13,8 @@
     "paths": {
       "about": "hakkimizda",
       "projects": "projelerimiz",
-      "gallery": "galeri"
+      "gallery": "galeri",
+      "contact": "iletisim"
     },
     "menu": {
       "open": "Menüyü aç",
@@ -316,31 +317,31 @@
       }
     },
     "expertise": {
-  "label": "Uzmanlık Alanlarımız",
-  "imageAlt": "Premium villa bahçesi ve peyzaj uygulama alanı",
-  "items": {
-    "landscape": {
-      "title": "Peyzaj Tasarımı",
-      "description": "Estetik ve fonksiyonel peyzaj planlamaları"
+      "label": "Uzmanlık Alanlarımız",
+      "imageAlt": "Premium villa bahçesi ve peyzaj uygulama alanı",
+      "items": {
+        "landscape": {
+          "title": "Peyzaj Tasarımı",
+          "description": "Estetik ve fonksiyonel peyzaj planlamaları"
+        },
+        "residential": {
+          "title": "Bahçe Uygulamaları",
+          "description": "Kaliteli malzeme ve titiz işçilikle uygulama"
+        },
+        "irrigation": {
+          "title": "Sulama Sistemleri",
+          "description": "Verimli, sürdürülebilir sulama çözümleri"
+        },
+        "lighting": {
+          "title": "Aydınlatma Tasarımı",
+          "description": "Mekanlara değer katan ışık çözümleri"
+        },
+        "maintenance": {
+          "title": "Bakım Hizmetleri",
+          "description": "Uzun ömürlü ve sağlıklı yaşam alanları için bakım"
+        }
+      }
     },
-    "residential": {
-      "title": "Bahçe Uygulamaları",
-      "description": "Kaliteli malzeme ve titiz işçilikle uygulama"
-    },
-    "irrigation": {
-      "title": "Sulama Sistemleri",
-      "description": "Verimli, sürdürülebilir sulama çözümleri"
-    },
-    "lighting": {
-      "title": "Aydınlatma Tasarımı",
-      "description": "Mekanlara değer katan ışık çözümleri"
-    },
-    "maintenance": {
-      "title": "Bakım Hizmetleri",
-      "description": "Uzun ömürlü ve sağlıklı yaşam alanları için bakım"
-    }
-  }
-},
     "studioGallery": {
       "label": "Atölyeden Kareler",
       "title": "Fikir, çizim ve uygulama aynı masada buluşur.",

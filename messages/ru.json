@@ -13,7 +13,8 @@
     "paths": {
       "about": "o-nas",
       "projects": "proekty",
-      "gallery": "galereya"
+      "gallery": "galereya",
+      "contact": "kontakt"
     },
     "menu": {
       "open": "Открыть меню",

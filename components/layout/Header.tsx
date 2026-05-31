@@ -19,7 +19,7 @@ export default function Header() {
     { label: t("nav.about"), href: `/${locale}/${t("paths.about")}` },
     { label: t("nav.projects"), href: `/${locale}/${t("paths.projects")}` },
     { label: t("nav.gallery"), href: `/${locale}/${t("paths.gallery")}` },
-    { label: t("nav.contact"), href: `/${locale}/#contact` },
+    { label: t("nav.contact"), href: `/${locale}/${t("paths.contact")}` },
   ];
 
   const closeMenu = () => setIsMenuOpen(false);

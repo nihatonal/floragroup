@@ -23,4 +23,9 @@ export const pathnames = {
     en: '/gallery',
     ru: '/galereya',
   },
+  '/iletisim': {
+    tr: '/iletisim',
+    en: '/contact',
+    ru: '/kontakt',
+  },
 } as const;

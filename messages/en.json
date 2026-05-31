@@ -13,7 +13,8 @@
     "paths": {
       "about": "about",
       "projects": "projects",
-      "gallery": "gallery"
+      "gallery": "gallery",
+       "contact": "contact"
     },
     "menu": {
       "open": "Open menu",
