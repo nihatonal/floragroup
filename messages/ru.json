@@ -234,11 +234,11 @@
   },
   "about": {
     "hero": {
-      "label": "Hakkımızda",
-      "title": "Doğayla uyumlu, zamansız yaşam alanları tasarlıyoruz.",
-      "description": "Her projede estetik, işlevsellik ve doğaya saygıyı bir araya getirerek insanların yaşam kalitesini artıran mekanlar oluşturuyoruz.",
-      "cta": "Bizi Tanıyın",
-      "imageAlt": "Peyzaj tasarım stüdyosunda proje çizimleri ve doğal detaylar"
+      "label": "О нас",
+      "title": "Мы создаём вневременные пространства для жизни в гармонии с природой.",
+      "description": "Объединяя эстетику, функциональность и бережное отношение к природе в каждом проекте, мы создаём пространства, повышающие качество жизни людей.",
+      "cta": "Познакомьтесь с нами",
+      "imageAlt": "Студия ландшафтного дизайна с проектными чертежами и природными элементами"
     },
     "story": {
       "label": "Наша История",

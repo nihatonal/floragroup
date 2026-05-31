@@ -1,25 +1,26 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-import { useLocale, useTranslations } from 'next-intl';
-import { useEffect, useState } from 'react';
-import Container from '@/components/ui/Container';
-import { cn } from '@/lib/utils';
-import { type Locale } from '@/i18n/routing';
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { useLocale, useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+import Container from "@/components/ui/Container";
+import { cn } from "@/lib/utils";
+import { type Locale } from "@/i18n/routing";
 
 export default function Header() {
-  const t = useTranslations('header');
+  const t = useTranslations("header");
   const locale = useLocale() as Locale;
-
+  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   const navItems = [
-    { label: t('nav.about'), href: `/${locale}/${t('paths.about')}` },
-    { label: t('nav.projects'), href: `/${locale}/${t('paths.projects')}` },
-    { label: t('nav.gallery'), href: `/${locale}/${t('paths.gallery')}` },
-    { label: t('nav.contact'), href: `/${locale}/#contact` },
+    { label: t("nav.about"), href: `/${locale}/${t("paths.about")}` },
+    { label: t("nav.projects"), href: `/${locale}/${t("paths.projects")}` },
+    { label: t("nav.gallery"), href: `/${locale}/${t("paths.gallery")}` },
+    { label: t("nav.contact"), href: `/${locale}/#contact` },
   ];
 
   const closeMenu = () => setIsMenuOpen(false);
@@ -31,36 +32,52 @@ export default function Header() {
     }
 
     handleScroll();
-    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener("scroll", handleScroll, { passive: true });
 
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = isMenuOpen ? 'hidden' : '';
+    document.body.style.overflow = isMenuOpen ? "hidden" : "";
 
     return () => {
-      document.body.style.overflow = '';
+      document.body.style.overflow = "";
     };
   }, [isMenuOpen]);
+
+  const getLocalizedPath = (nextLocale: Locale) => {
+    const segments = pathname.split("/").filter(Boolean);
+
+    if (segments.length === 0) {
+      return `/${nextLocale}`;
+    }
+
+    if (["tr", "en", "ru"].includes(segments[0])) {
+      segments[0] = nextLocale;
+    } else {
+      segments.unshift(nextLocale);
+    }
+
+    return `/${segments.join("/")}`;
+  };
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 px-3 pt-3 transition-all duration-500">
       <Container
         className={cn(
-          'relative z-[99] flex items-center justify-between transition-all duration-500',
+          "relative z-[99] flex items-center justify-between transition-all duration-500",
           isScrolled
-            ? 'h-14 rounded-full border border-flora-forest/10 bg-flora-ivory/80 px-6 text-flora-forest shadow-soft backdrop-blur-[20px]'
-            : 'h-16 rounded-full border border-flora-forest/10 bg-flora-ivory/70 px-6 text-flora-forest shadow-soft backdrop-blur-[20px]'
+            ? "h-14 rounded-full border border-flora-forest/10 bg-flora-ivory/80 px-6 text-flora-forest shadow-soft backdrop-blur-[20px]"
+            : "h-16 rounded-full border border-flora-forest/10 bg-flora-ivory/70 px-6 text-flora-forest shadow-soft backdrop-blur-[20px]",
         )}
       >
         <Link href={`/${locale}`} onClick={closeMenu} className="group">
           <span className="block font-display text-xl leading-none tracking-[-0.02em]">
-            {t('brand.name')}
+            {t("brand.name")}
           </span>
 
           <span className="mt-1 block text-[9px] uppercase tracking-luxury text-flora-forest/70 transition group-hover:text-flora-forest">
-            {t('brand.tagline')}
+            {t("brand.tagline")}
           </span>
         </Link>
 
@@ -78,14 +95,14 @@ export default function Header() {
 
         <div className="flex items-center gap-4">
           <div className="hidden items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-flora-forest/70 sm:flex">
-            {(['tr', 'en', 'ru'] as const).map((item) => (
+            {(["tr", "en", "ru"] as const).map((item) => (
               <Link
                 key={item}
-                href={`/${item}`}
+                href={getLocalizedPath(item)}
                 className={
                   item === locale
-                    ? 'text-flora-forest'
-                    : 'transition hover:text-flora-leaf'
+                    ? "text-flora-forest"
+                    : "transition hover:text-flora-leaf"
                 }
               >
                 {item}
@@ -97,31 +114,31 @@ export default function Header() {
             type="button"
             onClick={isMenuOpen ? closeMenu : openMenu}
             className={cn(
-              'group relative grid size-11 place-items-center rounded-full border backdrop-blur-xl transition duration-500 lg:hidden',
+              "group relative grid size-11 place-items-center rounded-full border backdrop-blur-xl transition duration-500 lg:hidden",
               isMenuOpen
-                ? 'border-flora-forest/10 bg-flora-forest text-flora-ivory'
-                : 'border-flora-forest/25 bg-flora-ivory/30 text-flora-forest hover:border-flora-leaf/60 hover:bg-flora-ivory/70'
+                ? "border-flora-forest/10 bg-flora-forest text-flora-ivory"
+                : "border-flora-forest/25 bg-flora-ivory/30 text-flora-forest hover:border-flora-leaf/60 hover:bg-flora-ivory/70",
             )}
-            aria-label={isMenuOpen ? t('menu.close') : t('menu.open')}
+            aria-label={isMenuOpen ? t("menu.close") : t("menu.open")}
             aria-expanded={isMenuOpen}
           >
             <span className="relative block h-4 w-5">
               <span
                 className={cn(
-                  'absolute left-0 top-0 h-px w-5 bg-current transition-all duration-300',
-                  isMenuOpen && 'top-2 rotate-45'
+                  "absolute left-0 top-0 h-px w-5 bg-current transition-all duration-300",
+                  isMenuOpen && "top-2 rotate-45",
                 )}
               />
               <span
                 className={cn(
-                  'absolute left-0 top-2 h-px w-5 bg-current transition-all duration-300',
-                  isMenuOpen && 'opacity-0'
+                  "absolute left-0 top-2 h-px w-5 bg-current transition-all duration-300",
+                  isMenuOpen && "opacity-0",
                 )}
               />
               <span
                 className={cn(
-                  'absolute bottom-0 left-0 h-px w-5 bg-current transition-all duration-300',
-                  isMenuOpen && 'bottom-[7px] -rotate-45'
+                  "absolute bottom-0 left-0 h-px w-5 bg-current transition-all duration-300",
+                  isMenuOpen && "bottom-[7px] -rotate-45",
                 )}
               />
             </span>
@@ -132,8 +149,8 @@ export default function Header() {
       {/* Overlay */}
       <motion.div
         className={cn(
-          'fixed inset-0 z-[55] bg-flora-night/35 backdrop-blur-sm lg:hidden',
-          isMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'
+          "fixed inset-0 z-[55] bg-flora-night/35 backdrop-blur-sm lg:hidden",
+          isMenuOpen ? "pointer-events-auto" : "pointer-events-none",
         )}
         initial={false}
         animate={{
@@ -149,12 +166,12 @@ export default function Header() {
       {/* Mobile drawer */}
       <motion.div
         className={cn(
-          'fixed inset-y-0 right-0 z-[60] h-[100dvh] w-screen transform-gpu overflow-hidden bg-flora-ivory text-flora-forest shadow-premium will-change-transform sm:max-w-[430px] lg:hidden',
-          isMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'
+          "fixed inset-y-0 right-0 z-[60] h-[100dvh] w-screen transform-gpu overflow-hidden bg-flora-ivory text-flora-forest shadow-premium will-change-transform sm:max-w-[430px] lg:hidden",
+          isMenuOpen ? "pointer-events-auto" : "pointer-events-none",
         )}
         initial={false}
         animate={{
-          x: isMenuOpen ? '0%' : '110%',
+          x: isMenuOpen ? "0%" : "110%",
         }}
         transition={{
           duration: 0.52,
@@ -199,15 +216,15 @@ export default function Header() {
 
           <div className="mt-auto border-t border-flora-forest/10 pt-6">
             <div className="mb-6 flex gap-5 text-xs font-semibold uppercase tracking-luxury text-flora-forest/70">
-              {(['tr', 'en', 'ru'] as const).map((item) => (
+              {(["tr", "en", "ru"] as const).map((item) => (
                 <Link
                   key={item}
-                  href={`/${item}`}
+                 href={getLocalizedPath(item)}
                   onClick={closeMenu}
                   className={
                     item === locale
-                      ? 'text-flora-bronze'
-                      : 'transition hover:text-flora-leaf'
+                      ? "text-flora-bronze"
+                      : "transition hover:text-flora-leaf"
                   }
                 >
                   {item}
@@ -216,7 +233,7 @@ export default function Header() {
             </div>
 
             <p className="max-w-xs text-xs leading-6 text-flora-forest/48">
-              {t('menu.note')}
+              {t("menu.note")}
             </p>
           </div>
         </div>

@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { useTranslations } from 'next-intl';
-import Container from '@/components/ui/Container';
-import SectionLabel from '@/components/ui/SectionLabel';
-import FadeUp from '@/components/motion/FadeUp';
-import ImageParallax from '@/components/motion/ImageParallax';
+import Image from "next/image";
+import { useTranslations } from "next-intl";
+import Container from "@/components/ui/Container";
+import SectionLabel from "@/components/ui/SectionLabel";
+import FadeUp from "@/components/motion/FadeUp";
+import ImageParallax from "@/components/motion/ImageParallax";
+import ScrollButton from "@/components/ui/ScrollButton";
 
 export default function AboutStory() {
-  const t = useTranslations('about.story');
+  const t = useTranslations("about.story");
 
   return (
     <section
@@ -20,30 +20,30 @@ export default function AboutStory() {
         <div className="grid gap-12 lg:grid-cols-[0.72fr_1fr] lg:items-center">
           <div>
             <FadeUp>
-              <SectionLabel>{t('label')}</SectionLabel>
+              <SectionLabel>{t("label")}</SectionLabel>
             </FadeUp>
 
             <FadeUp delay={0.08}>
               <h2 className="max-w-[18ch] font-display text-4xl leading-[0.96] tracking-[-0.05em] md:text-6xl">
-                {t('title')}
+                {t("title")}
               </h2>
             </FadeUp>
 
             <FadeUp delay={0.16}>
               <div className="mt-7 max-w-md space-y-5 text-sm leading-7 text-flora-charcoal/68 md:text-base">
-                <p>{t('paragraph1')}</p>
-                <p>{t('paragraph2')}</p>
+                <p>{t("paragraph1")}</p>
+                <p>{t("paragraph2")}</p>
               </div>
             </FadeUp>
 
             <FadeUp delay={0.24}>
-              <Link
-                href="#approach"
+              <ScrollButton
+                targetId="approach"
                 className="group mt-9 inline-flex items-center gap-4 text-[11px] uppercase tracking-[0.18em] text-flora-charcoal transition hover:text-flora-leaf"
               >
-                {t('cta')}
+                {t("cta")}
                 <span className="h-px w-8 bg-current transition-all duration-500 group-hover:w-12" />
-              </Link>
+              </ScrollButton>
             </FadeUp>
           </div>
 
@@ -54,7 +54,7 @@ export default function AboutStory() {
             >
               <Image
                 src="/images/about-story.webp"
-                alt={t('imageAlt')}
+                alt={t("imageAlt")}
                 fill
                 quality={100}
                 sizes="(max-width: 1024px) 100vw, 55vw"

@@ -1,11 +1,11 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Container from "@/components/ui/Container";
 import FadeUp from "@/components/motion/FadeUp";
 import Parallax from "@/components/motion/Parallax";
+import ScrollButton from "@/components/ui/ScrollButton";
 
 export default function AboutHero() {
   const t = useTranslations("about.hero");
@@ -48,13 +48,13 @@ export default function AboutHero() {
           </FadeUp>
 
           <FadeUp delay={0.38}>
-            <Link
-              href="#story"
+            <ScrollButton
+              targetId="story"
               className="group mt-7 inline-flex items-center gap-4 rounded-full bg-flora-forest px-6 py-3.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-flora-ivory shadow-soft transition duration-500 hover:bg-flora-leaf"
             >
               {t("cta")}
               <span className="h-px w-8 bg-current transition-all duration-500 group-hover:w-11" />
-            </Link>
+            </ScrollButton>
           </FadeUp>
         </Container>
       </div>
@@ -101,13 +101,13 @@ export default function AboutHero() {
             </FadeUp>
 
             <FadeUp delay={0.5}>
-              <Link
-                href="#story"
+              <ScrollButton
+                targetId="story"
                 className="group mt-7 inline-flex items-center gap-4 rounded-full bg-flora-forest px-6 py-3.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-flora-ivory shadow-soft transition duration-500 hover:bg-flora-leaf"
               >
                 {t("cta")}
                 <span className="h-px w-8 bg-current transition-all duration-500 group-hover:w-11" />
-              </Link>
+              </ScrollButton>
             </FadeUp>
           </div>
         </Container>
