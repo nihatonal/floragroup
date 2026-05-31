@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -38,10 +37,18 @@ export default function Header() {
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = isMenuOpen ? "hidden" : "";
+    if (!isMenuOpen) {
+      document.body.style.overflow = "";
+      document.body.style.touchAction = "";
+      return;
+    }
+
+    document.body.style.overflow = "hidden";
+    document.body.style.touchAction = "none";
 
     return () => {
       document.body.style.overflow = "";
+      document.body.style.touchAction = "";
     };
   }, [isMenuOpen]);
 
@@ -147,36 +154,22 @@ export default function Header() {
       </Container>
 
       {/* Overlay */}
-      <motion.div
-        className={cn(
-          "fixed inset-0 z-[55] bg-flora-night/35 backdrop-blur-sm lg:hidden",
-          isMenuOpen ? "pointer-events-auto" : "pointer-events-none",
-        )}
-        initial={false}
-        animate={{
-          opacity: isMenuOpen ? 1 : 0,
-        }}
-        transition={{
-          duration: 0.28,
-          ease: [0.22, 1, 0.36, 1],
-        }}
+      <div
         onClick={closeMenu}
+        className={cn(
+          "fixed inset-0 z-[55] bg-flora-night/35 transition-opacity duration-300 lg:hidden",
+          isMenuOpen
+            ? "pointer-events-auto opacity-100"
+            : "pointer-events-none opacity-0",
+        )}
       />
 
       {/* Mobile drawer */}
-      <motion.div
+      <div
         className={cn(
-          "fixed inset-y-0 right-0 z-[60] h-[100dvh] w-screen transform-gpu overflow-hidden bg-flora-ivory text-flora-forest shadow-premium will-change-transform sm:max-w-[430px] lg:hidden",
-          isMenuOpen ? "pointer-events-auto" : "pointer-events-none",
+          "fixed inset-y-0 right-0 z-[60] h-[100dvh] w-full max-w-[430px] overflow-hidden bg-flora-ivory text-flora-forest shadow-premium transition-transform duration-500 ease-out will-change-transform lg:hidden",
+          isMenuOpen ? "translate-x-0" : "translate-x-full",
         )}
-        initial={false}
-        animate={{
-          x: isMenuOpen ? "0%" : "110%",
-        }}
-        transition={{
-          duration: 0.52,
-          ease: [0.22, 1, 0.36, 1],
-        }}
       >
         <div className="absolute -right-24 top-20 h-72 w-72 rounded-full bg-flora-leaf/10 blur-[90px]" />
         <div className="absolute -left-24 bottom-20 h-72 w-72 rounded-full bg-flora-champagne/12 blur-[90px]" />
@@ -184,33 +177,28 @@ export default function Header() {
         <div className="relative flex h-full flex-col px-6 py-6">
           <nav className="mt-20 flex flex-col gap-3">
             {navItems.map((item, index) => (
-              <motion.div
+              <Link
                 key={item.href}
-                initial={false}
-                animate={{
-                  opacity: isMenuOpen ? 1 : 0,
-                  x: isMenuOpen ? 0 : 32,
-                }}
-                transition={{
-                  duration: 0.55,
-                  delay: isMenuOpen ? 0.12 + index * 0.07 : 0,
-                  ease: [0.22, 1, 0.36, 1],
+                href={item.href}
+                onClick={closeMenu}
+                className={cn(
+                  "group flex items-end justify-between border-b border-flora-forest/10 py-5 transition-all duration-500",
+                  isMenuOpen
+                    ? "translate-x-0 opacity-100"
+                    : "translate-x-8 opacity-0",
+                )}
+                style={{
+                  transitionDelay: isMenuOpen ? `${120 + index * 70}ms` : "0ms",
                 }}
               >
-                <Link
-                  href={item.href}
-                  onClick={closeMenu}
-                  className="group flex items-end justify-between border-b border-flora-forest/10 py-5"
-                >
-                  <span className="font-display text-[clamp(2.75rem,12vw,4.5rem)] leading-none tracking-[-0.055em] transition duration-500 group-hover:text-flora-leaf">
-                    {item.label}
-                  </span>
+                <span className="font-display text-[clamp(2.75rem,12vw,4.5rem)] leading-none tracking-[-0.055em] transition duration-500 group-hover:text-flora-leaf">
+                  {item.label}
+                </span>
 
-                  <span className="mb-1 text-[11px] text-flora-bronze">
-                    0{index + 1}
-                  </span>
-                </Link>
-              </motion.div>
+                <span className="mb-1 text-[11px] text-flora-bronze">
+                  0{index + 1}
+                </span>
+              </Link>
             ))}
           </nav>
 
@@ -219,7 +207,7 @@ export default function Header() {
               {(["tr", "en", "ru"] as const).map((item) => (
                 <Link
                   key={item}
-                 href={getLocalizedPath(item)}
+                  href={getLocalizedPath(item)}
                   onClick={closeMenu}
                   className={
                     item === locale
@@ -237,7 +225,7 @@ export default function Header() {
             </p>
           </div>
         </div>
-      </motion.div>
+      </div>
     </header>
   );
 }
