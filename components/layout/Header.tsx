@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
 import Container from '@/components/ui/Container';
@@ -14,7 +14,6 @@ export default function Header() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isBodyLocked, setIsBodyLocked] = useState(false);
 
   const navItems = [
     { label: t('nav.about'), href: `/${locale}/${t('paths.about')}` },
@@ -23,14 +22,8 @@ export default function Header() {
     { label: t('nav.contact'), href: `/${locale}/#contact` },
   ];
 
-  const openMenu = () => {
-    setIsBodyLocked(true);
-    setIsMenuOpen(true);
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
+  const closeMenu = () => setIsMenuOpen(false);
+  const openMenu = () => setIsMenuOpen(true);
 
   useEffect(() => {
     function handleScroll() {
@@ -44,12 +37,12 @@ export default function Header() {
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = isBodyLocked ? 'hidden' : '';
+    document.body.style.overflow = isMenuOpen ? 'hidden' : '';
 
     return () => {
       document.body.style.overflow = '';
     };
-  }, [isBodyLocked]);
+  }, [isMenuOpen]);
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 px-3 pt-3 transition-all duration-500">
@@ -61,11 +54,7 @@ export default function Header() {
             : 'h-16 rounded-full border border-flora-forest/10 bg-flora-ivory/70 px-6 text-flora-forest shadow-soft backdrop-blur-[20px]'
         )}
       >
-        <Link
-          href={`/${locale}`}
-          onClick={closeMenu}
-          className="group relative z-[70]"
-        >
+        <Link href={`/${locale}`} onClick={closeMenu} className="group">
           <span className="block font-display text-xl leading-none tracking-[-0.02em]">
             {t('brand.name')}
           </span>
@@ -87,7 +76,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="relative z-[70] flex items-center gap-4">
+        <div className="flex items-center gap-4">
           <div className="hidden items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-flora-forest/70 sm:flex">
             {(['tr', 'en', 'ru'] as const).map((item) => (
               <Link
@@ -106,13 +95,7 @@ export default function Header() {
 
           <button
             type="button"
-            onClick={() => {
-              if (isMenuOpen) {
-                closeMenu();
-              } else {
-                openMenu();
-              }
-            }}
+            onClick={isMenuOpen ? closeMenu : openMenu}
             className={cn(
               'group relative grid size-11 place-items-center rounded-full border backdrop-blur-xl transition duration-500 lg:hidden',
               isMenuOpen
@@ -129,14 +112,12 @@ export default function Header() {
                   isMenuOpen && 'top-2 rotate-45'
                 )}
               />
-
               <span
                 className={cn(
                   'absolute left-0 top-2 h-px w-5 bg-current transition-all duration-300',
                   isMenuOpen && 'opacity-0'
                 )}
               />
-
               <span
                 className={cn(
                   'absolute bottom-0 left-0 h-px w-5 bg-current transition-all duration-300',
@@ -148,111 +129,98 @@ export default function Header() {
         </div>
       </Container>
 
-      <AnimatePresence
-        mode="wait"
-        onExitComplete={() => {
-          setIsBodyLocked(false);
+      {/* Overlay */}
+      <motion.div
+        className={cn(
+          'fixed inset-0 z-[55] bg-flora-night/35 backdrop-blur-sm lg:hidden',
+          isMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'
+        )}
+        initial={false}
+        animate={{
+          opacity: isMenuOpen ? 1 : 0,
+        }}
+        transition={{
+          duration: 0.28,
+          ease: [0.22, 1, 0.36, 1],
+        }}
+        onClick={closeMenu}
+      />
+
+      {/* Mobile drawer */}
+      <motion.div
+        className={cn(
+          'fixed inset-y-0 right-0 z-[60] h-[100dvh] w-screen transform-gpu overflow-hidden bg-flora-ivory text-flora-forest shadow-premium will-change-transform sm:max-w-[430px] lg:hidden',
+          isMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'
+        )}
+        initial={false}
+        animate={{
+          x: isMenuOpen ? '0%' : '110%',
+        }}
+        transition={{
+          duration: 0.52,
+          ease: [0.22, 1, 0.36, 1],
         }}
       >
-        {isMenuOpen && (
-          <>
-            <motion.div
-              className="fixed inset-0 z-[55] bg-flora-night/35 backdrop-blur-sm lg:hidden"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-              onClick={closeMenu}
-            />
+        <div className="absolute -right-24 top-20 h-72 w-72 rounded-full bg-flora-leaf/10 blur-[90px]" />
+        <div className="absolute -left-24 bottom-20 h-72 w-72 rounded-full bg-flora-champagne/12 blur-[90px]" />
 
-            <motion.div
-              className="fixed bottom-0 right-0 top-0 z-[60] w-full max-w-[430px] transform-gpu overflow-hidden bg-flora-ivory text-flora-forest shadow-premium will-change-transform lg:hidden"
-              initial={{ x: 'calc(100% + 24px)' }}
-              animate={{ x: 0 }}
-              exit={{ x: 'calc(100% + 24px)' }}
-              transition={{
-                duration: 0.55,
-                ease: [0.22, 1, 0.36, 1],
-              }}
-            >
-              <div className="absolute -right-24 top-20 h-72 w-72 rounded-full bg-flora-leaf/10 blur-[90px]" />
-              <div className="absolute -left-24 bottom-20 h-72 w-72 rounded-full bg-flora-champagne/12 blur-[90px]" />
-
-              <div className="relative flex h-full flex-col px-6 py-6">
-                <motion.nav
-                  className="mt-20 flex flex-col gap-3"
-                  initial="hidden"
-                  animate="show"
-                  exit="hidden"
-                  variants={{
-                    hidden: {},
-                    show: {
-                      transition: {
-                        staggerChildren: 0.08,
-                        delayChildren: 0.16,
-                      },
-                    },
-                  }}
+        <div className="relative flex h-full flex-col px-6 py-6">
+          <nav className="mt-20 flex flex-col gap-3">
+            {navItems.map((item, index) => (
+              <motion.div
+                key={item.href}
+                initial={false}
+                animate={{
+                  opacity: isMenuOpen ? 1 : 0,
+                  x: isMenuOpen ? 0 : 32,
+                }}
+                transition={{
+                  duration: 0.55,
+                  delay: isMenuOpen ? 0.12 + index * 0.07 : 0,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+              >
+                <Link
+                  href={item.href}
+                  onClick={closeMenu}
+                  className="group flex items-end justify-between border-b border-flora-forest/10 py-5"
                 >
-                  {navItems.map((item, index) => (
-                    <motion.div
-                      key={item.href}
-                      variants={{
-                        hidden: { opacity: 0, x: 34 },
-                        show: {
-                          opacity: 1,
-                          x: 0,
-                          transition: {
-                            duration: 0.65,
-                            ease: [0.22, 1, 0.36, 1],
-                          },
-                        },
-                      }}
-                    >
-                      <Link
-                        href={item.href}
-                        onClick={closeMenu}
-                        className="group flex items-end justify-between border-b border-flora-forest/10 py-5"
-                      >
-                        <span className="font-display text-[clamp(2.75rem,12vw,4.5rem)] leading-none tracking-[-0.055em] transition duration-500 group-hover:text-flora-leaf">
-                          {item.label}
-                        </span>
+                  <span className="font-display text-[clamp(2.75rem,12vw,4.5rem)] leading-none tracking-[-0.055em] transition duration-500 group-hover:text-flora-leaf">
+                    {item.label}
+                  </span>
 
-                        <span className="mb-1 text-[11px] text-flora-bronze">
-                          0{index + 1}
-                        </span>
-                      </Link>
-                    </motion.div>
-                  ))}
-                </motion.nav>
+                  <span className="mb-1 text-[11px] text-flora-bronze">
+                    0{index + 1}
+                  </span>
+                </Link>
+              </motion.div>
+            ))}
+          </nav>
 
-                <div className="mt-auto border-t border-flora-forest/10 pt-6">
-                  <div className="mb-6 flex gap-5 text-xs font-semibold uppercase tracking-luxury text-flora-forest/70">
-                    {(['tr', 'en', 'ru'] as const).map((item) => (
-                      <Link
-                        key={item}
-                        href={`/${item}`}
-                        onClick={closeMenu}
-                        className={
-                          item === locale
-                            ? 'text-flora-bronze'
-                            : 'transition hover:text-flora-leaf'
-                        }
-                      >
-                        {item}
-                      </Link>
-                    ))}
-                  </div>
+          <div className="mt-auto border-t border-flora-forest/10 pt-6">
+            <div className="mb-6 flex gap-5 text-xs font-semibold uppercase tracking-luxury text-flora-forest/70">
+              {(['tr', 'en', 'ru'] as const).map((item) => (
+                <Link
+                  key={item}
+                  href={`/${item}`}
+                  onClick={closeMenu}
+                  className={
+                    item === locale
+                      ? 'text-flora-bronze'
+                      : 'transition hover:text-flora-leaf'
+                  }
+                >
+                  {item}
+                </Link>
+              ))}
+            </div>
 
-                  <p className="max-w-xs text-xs leading-6 text-flora-forest/48">
-                    {t('menu.note')}
-                  </p>
-                </div>
-              </div>
-            </motion.div>
-          </>
-        )}
-      </AnimatePresence>
+            <p className="max-w-xs text-xs leading-6 text-flora-forest/48">
+              {t('menu.note')}
+            </p>
+          </div>
+        </div>
+      </motion.div>
     </header>
   );
 }
