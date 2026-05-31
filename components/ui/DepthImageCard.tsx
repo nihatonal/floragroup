@@ -19,7 +19,7 @@ export default function DepthImageCard({
   alt,
   ratio = 'aspect-[4/5]',
   sizes = '(max-width: 768px) 100vw, 33vw',
-  quality = 90,
+  quality = 75,
   offset = 24,
   className,
 }: DepthImageCardProps) {

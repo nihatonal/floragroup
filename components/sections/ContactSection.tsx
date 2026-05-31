@@ -30,8 +30,8 @@ export default function ContactSection() {
             src="/images/project-main.webp"
             alt=""
             fill
-            quality={90}
-            sizes="100vw"
+            quality={75}
+            sizes="(max-width: 767px) 100vw, 50vw"
             className="scale-110 object-cover opacity-45"
           />
         </ImageParallax>

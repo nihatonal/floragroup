@@ -1,36 +1,36 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
-import { useLocale, useTranslations } from 'next-intl';
-import { useState } from 'react';
-import SectionLabel from '@/components/ui/SectionLabel';
-import FadeUp from '@/components/motion/FadeUp';
-import ImageParallax from '@/components/motion/ImageParallax';
-import { type Locale } from '@/i18n/routing';
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
+import { useState } from "react";
+import SectionLabel from "@/components/ui/SectionLabel";
+import FadeUp from "@/components/motion/FadeUp";
+import ImageParallax from "@/components/motion/ImageParallax";
+import { type Locale } from "@/i18n/routing";
 
 const projects = [
   {
-    key: 'kemer',
-    image: '/images/project-main.webp',
+    key: "kemer",
+    image: "/images/project-main.webp",
   },
   {
-    key: 'villa',
-    image: '/images/gallery-01.webp',
+    key: "villa",
+    image: "/images/gallery-01.webp",
   },
   {
-    key: 'garden',
-    image: '/images/gallery-02.webp',
+    key: "garden",
+    image: "/images/gallery-02.webp",
   },
   {
-    key: 'terrace',
-    image: '/images/gallery-03.webp',
+    key: "terrace",
+    image: "/images/gallery-03.webp",
   },
 ] as const;
 
 export default function FeaturedProject() {
-  const t = useTranslations('home.featuredProject');
+  const t = useTranslations("home.featuredProject");
   const locale = useLocale() as Locale;
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -38,13 +38,13 @@ export default function FeaturedProject() {
 
   const goPrev = () => {
     setActiveIndex((current) =>
-      current === 0 ? projects.length - 1 : current - 1
+      current === 0 ? projects.length - 1 : current - 1,
     );
   };
 
   const goNext = () => {
     setActiveIndex((current) =>
-      current === projects.length - 1 ? 0 : current + 1
+      current === projects.length - 1 ? 0 : current + 1,
     );
   };
 
@@ -58,12 +58,11 @@ export default function FeaturedProject() {
               src={project.image}
               alt={t(`projects.${project.key}.imageAlt`)}
               fill
-              quality={100}
-              sizes="100vw"
+              quality={75}
+              loading="lazy"
+              sizes="(max-width: 767px) 100vw, 50vw"
               className={`scale-[1.04] object-cover transition-all duration-1000 ease-out ${
-                index === activeIndex
-                  ? 'opacity-100'
-                  : 'opacity-0'
+                index === activeIndex ? "opacity-100" : "opacity-0"
               }`}
             />
           ))}
@@ -76,7 +75,7 @@ export default function FeaturedProject() {
           <div className="relative min-h-[420px] max-w-[420px] pb-24">
             <FadeUp key={`label-${activeIndex}`}>
               <SectionLabel className="text-flora-champagne">
-                {t('label')}
+                {t("label")}
               </SectionLabel>
             </FadeUp>
 
@@ -100,10 +99,10 @@ export default function FeaturedProject() {
 
             <FadeUp key={`cta-${activeIndex}`} delay={0.2}>
               <Link
-                href={`/${locale}/${t('paths.projects')}`}
+                href={`/${locale}/${t("paths.projects")}`}
                 className="group mb-5 mt-9 inline-flex items-center gap-4 text-[11px] uppercase tracking-[0.18em] text-flora-ivory transition hover:text-flora-champagne"
               >
-                {t('cta')}
+                {t("cta")}
                 <span className="h-px w-10 bg-current transition-all duration-500 group-hover:w-14" />
               </Link>
             </FadeUp>
@@ -113,7 +112,7 @@ export default function FeaturedProject() {
                 type="button"
                 onClick={goPrev}
                 className="grid size-10 place-items-center rounded-full border border-flora-ivory/25 bg-black/10 backdrop-blur-md transition hover:border-flora-champagne hover:text-flora-champagne"
-                aria-label={t('controls.prev')}
+                aria-label={t("controls.prev")}
               >
                 <ArrowLeft size={16} />
               </button>
@@ -126,12 +125,12 @@ export default function FeaturedProject() {
                     onClick={() => setActiveIndex(index)}
                     className={`text-[11px] transition ${
                       index === activeIndex
-                        ? 'text-flora-champagne'
-                        : 'text-flora-ivory/38 hover:text-flora-champagne'
+                        ? "text-flora-champagne"
+                        : "text-flora-ivory/38 hover:text-flora-champagne"
                     }`}
-                    aria-label={`${t('controls.goTo')} ${index + 1}`}
+                    aria-label={`${t("controls.goTo")} ${index + 1}`}
                   >
-                    {String(index + 1).padStart(2, '0')}
+                    {String(index + 1).padStart(2, "0")}
                   </button>
                 ))}
               </div>
@@ -140,7 +139,7 @@ export default function FeaturedProject() {
                 type="button"
                 onClick={goNext}
                 className="grid size-10 place-items-center rounded-full border border-flora-ivory/25 bg-black/10 backdrop-blur-md transition hover:border-flora-champagne hover:text-flora-champagne"
-                aria-label={t('controls.next')}
+                aria-label={t("controls.next")}
               >
                 <ArrowRight size={16} />
               </button>
