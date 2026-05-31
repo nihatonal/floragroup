@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import Image from 'next/image';
-import { useLocale, useTranslations } from 'next-intl';
-import Container from '@/components/ui/Container';
-import FadeUp from '@/components/motion/FadeUp';
-import Parallax from '@/components/motion/Parallax';
-import { type Locale } from '@/i18n/routing';
+import Link from "next/link";
+import Image from "next/image";
+import { useLocale, useTranslations } from "next-intl";
+import Container from "@/components/ui/Container";
+import FadeUp from "@/components/motion/FadeUp";
+import Parallax from "@/components/motion/Parallax";
+import { type Locale } from "@/i18n/routing";
 
 export default function HeroSection() {
-  const t = useTranslations('home.hero');
+  const t = useTranslations("home.hero");
   const locale = useLocale() as Locale;
 
   return (
@@ -19,11 +19,12 @@ export default function HeroSection() {
         <div className="absolute inset-0 md:hidden">
           <Image
             src="/images/hero-garden-mobile.webp"
-            alt={t('imageAlt')}
+            alt={t("imageAlt")}
             fill
             priority
-            quality={100}
-            sizes="(max-width: 767px) 100vw, 0vw"
+            fetchPriority="high"
+            quality={75}
+            sizes="100vw"
             className="object-cover object-center saturate-[1.05] contrast-[1.03]"
           />
 
@@ -38,7 +39,7 @@ export default function HeroSection() {
             <div className="relative h-[108svh] w-full scale-[1.015]">
               <Image
                 src="/images/hero-garden-desktop.webp"
-                alt={t('imageAlt')}
+                alt={t("imageAlt")}
                 fill
                 priority
                 quality={100}
@@ -58,29 +59,29 @@ export default function HeroSection() {
         <div className="max-w-[620px]">
           <FadeUp>
             <p className="mb-5 text-[10px] font-medium uppercase tracking-luxury text-flora-bronze/90 md:mb-6">
-              {t('eyebrow')}
+              {t("eyebrow")}
             </p>
           </FadeUp>
 
           <FadeUp delay={0.1}>
             <h1 className="max-w-[9.5ch] font-display text-[clamp(3.8rem,16vw,5.6rem)] leading-[0.86] tracking-[-0.055em] text-flora-forest md:text-[clamp(4rem,8vw,8.5rem)] md:leading-[0.84]">
-              {t('title')}
+              {t("title")}
             </h1>
           </FadeUp>
 
           <FadeUp delay={0.35}>
             <p className="mt-5 max-w-[250px] text-sm leading-6 text-flora-charcoal/72 md:max-w-[430px] md:text-[15px]">
-              {t('description')}
+              {t("description")}
             </p>
           </FadeUp>
 
           <FadeUp delay={0.5}>
             <div className="mt-7 flex flex-wrap items-center gap-5 md:mt-5">
               <Link
-                href={`/${locale}/${t('paths.projects')}`}
+                href={`/${locale}/${t("paths.projects")}`}
                 className="group inline-flex items-center gap-4 rounded-full bg-flora-forest px-6 py-3.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-flora-ivory shadow-soft transition duration-500 hover:bg-flora-leaf"
               >
-                {t('ctaPrimary')}
+                {t("ctaPrimary")}
 
                 <span className="h-px w-8 bg-current transition-all duration-500 group-hover:w-11" />
               </Link>
@@ -93,7 +94,7 @@ export default function HeroSection() {
           className="absolute bottom-12 right-8 hidden items-center gap-4 md:flex"
         >
           <span className="text-[10px] uppercase tracking-luxury text-flora-ivory drop-shadow">
-            {t('scroll')}
+            {t("scroll")}
           </span>
 
           <span className="relative block h-16 w-px overflow-hidden bg-flora-ivory/40">
