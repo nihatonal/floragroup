@@ -121,7 +121,7 @@ export default function Header() {
             type="button"
             onClick={isMenuOpen ? closeMenu : openMenu}
             className={cn(
-              "group relative grid size-11 place-items-center rounded-full border backdrop-blur-xl transition duration-300 lg:hidden",
+              "group relative grid size-11 place-items-center rounded-full border backdrop-blur-xl transition duration-3  00 lg:hidden",
               isMenuOpen
                 ? "border-flora-forest/10 bg-flora-forest text-flora-ivory"
                 : "border-flora-forest/25 bg-flora-ivory/30 text-flora-forest hover:border-flora-leaf/60 hover:bg-flora-ivory/70",
