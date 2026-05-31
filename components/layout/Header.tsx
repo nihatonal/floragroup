@@ -121,7 +121,7 @@ export default function Header() {
             type="button"
             onClick={isMenuOpen ? closeMenu : openMenu}
             className={cn(
-              "group relative grid size-11 place-items-center rounded-full border backdrop-blur-xl transition duration-500 lg:hidden",
+              "group relative grid size-11 place-items-center rounded-full border backdrop-blur-xl transition duration-300 lg:hidden",
               isMenuOpen
                 ? "border-flora-forest/10 bg-flora-forest text-flora-ivory"
                 : "border-flora-forest/25 bg-flora-ivory/30 text-flora-forest hover:border-flora-leaf/60 hover:bg-flora-ivory/70",
@@ -132,20 +132,22 @@ export default function Header() {
             <span className="relative block h-4 w-5">
               <span
                 className={cn(
-                  "absolute left-0 top-0 h-px w-5 bg-current transition-all duration-300",
-                  isMenuOpen && "top-2 rotate-45",
+                  "absolute left-0 top-2 h-px w-5 origin-center bg-current transition-transform duration-300",
+                  isMenuOpen ? "rotate-45" : "-translate-y-2",
                 )}
               />
+
               <span
                 className={cn(
-                  "absolute left-0 top-2 h-px w-5 bg-current transition-all duration-300",
+                  "absolute left-0 top-2 h-px w-5 bg-current transition-opacity duration-200",
                   isMenuOpen && "opacity-0",
                 )}
               />
+
               <span
                 className={cn(
-                  "absolute bottom-0 left-0 h-px w-5 bg-current transition-all duration-300",
-                  isMenuOpen && "bottom-[7px] -rotate-45",
+                  "absolute left-0 top-2 h-px w-5 origin-center bg-current transition-transform duration-300",
+                  isMenuOpen ? "-rotate-45" : "translate-y-2",
                 )}
               />
             </span>
