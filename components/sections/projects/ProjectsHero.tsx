@@ -48,7 +48,7 @@ export default function ProjectsHero({ locale }: ProjectsHeroProps) {
       </div>
 
       <div className="relative z-10 mx-auto flex h-full w-full max-w-[1480px] items-end px-6 pb-14 pt-28 md:items-center md:px-16 md:pb-0 md:pt-24">
-        <div className="max-w-[520px] text-flora-ivory md:text-flora-forest">
+        <div className="max-w-[560px] text-flora-ivory md:text-flora-forest">
           <p className="mb-5 text-[11px] font-semibold uppercase tracking-[0.26em] text-flora-champagne">
             {t("eyebrow")}
           </p>

@@ -93,7 +93,7 @@ export default function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-[11px] font-semibold uppercase tracking-[0.16em] text-flora-forest/80 transition duration-300 hover:text-flora-leaf"
+              className="text-[11px] font-semibold uppercase tracking-[0.16em] text-flora-forest transition duration-300 hover:text-flora-leaf"
             >
               {item.label}
             </Link>
