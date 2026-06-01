@@ -360,5 +360,55 @@
       "button": "Projelerimizi İnceleyin",
       "imageAlt": "Lüks villa peyzajı ve akşam aydınlatması"
     }
+  },
+
+  "projects": {
+    "paths": {
+      "projects": "projeler"
+    },
+    "hero": {
+      "eyebrow": "Öne Çıkan Proje",
+      "cta": "Projeyi İncele",
+      "previous": "Önceki proje",
+      "next": "Sonraki proje",
+      "goToProject": "{number}. projeye git"
+    },
+    "categories": {
+      "all": "Tümü",
+      "featured": "Öne Çıkanlar",
+      "villa": "Villa Bahçeleri",
+      "terrace": "Teras Bahçeleri",
+      "hotel": "Otel Peyzajı",
+      "commercial": "Kurumsal Alanlar",
+      "public": "Kamusal Alanlar"
+    },
+    "filters": {
+      "open": "Kategoriler",
+      "title": "Kategoriler",
+      "close": "Filtreyi kapat",
+      "count": "proje"
+    },
+    "card": {
+      "cta": "Projeyi İncele"
+    },
+    "selected": {
+      "eyebrow": "Seçkin Proje"
+    },
+    "facts": {
+      "area": "Proje Alanı",
+      "plants": "Bitki Çeşidi",
+      "season": "Mevsim Kullanım"
+    },
+    "loadMore": "Daha Fazla Proje Keşfet",
+    "summary": {
+      "projectsFound": "Proje Gösteriliyor"
+    },
+
+    "cta": {
+      "title": "Hayalinizdeki yaşam alanını birlikte tasarlayalım.",
+      "description": "Doğayla uyumlu, estetik ve sürdürülebilir mekanlar için bize ulaşın. Birlikte yaşam alanınızı dönüştürebiliriz.",
+      "button": "İletişime Geçin",
+      "contactPath": "iletisim"
+    }
   }
 }

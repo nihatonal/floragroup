@@ -5,7 +5,7 @@ export const bursaBoutiqueHotel: Project = {
 
   slug: 'bursa-boutique-hotel-garden',
 
-  featured: false,
+  featured: true,
   category: ['hotel'],
 
   completionYear: 2022,

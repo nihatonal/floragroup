@@ -14,7 +14,7 @@
       "about": "about",
       "projects": "projects",
       "gallery": "gallery",
-       "contact": "contact"
+      "contact": "contact"
     },
     "menu": {
       "open": "Open menu",
@@ -358,6 +358,54 @@
       "description": "Take the first step toward a timeless landscape designed around your lifestyle.",
       "button": "Explore Projects",
       "imageAlt": "Luxury villa landscape with evening lighting"
+    }
+  },
+
+  "projects": {
+    "paths": {
+      "projects": "projects"
+    },
+    "hero": {
+      "eyebrow": "Featured Project",
+      "cta": "View Project",
+      "previous": "Previous project",
+      "next": "Next project",
+      "goToProject": "Go to project {number}"
+    },
+    "categories": {
+      "all": "All",
+      "featured": "Featured",
+      "villa": "Villa Gardens",
+      "terrace": "Terrace Gardens",
+      "hotel": "Hotel Landscape",
+      "commercial": "Corporate Spaces",
+      "public": "Public Spaces"
+    },
+    "filters": {
+      "open": "Categories",
+      "title": "Categories",
+      "close": "Close filter",
+      "count": "projects"
+    },
+    "card": {
+      "cta": "View Project"
+    },
+    "selected": {
+      "eyebrow": "Selected Project"
+    },
+    "facts": {
+      "area": "Project Area",
+      "plants": "Plant Species",
+      "season": "Season Usage"
+    },
+    "summary": {
+      "projectsFound": "Projects Showing"
+    },
+    "cta": {
+      "title": "Let's design your dream outdoor living space together.",
+      "description": "Contact us for timeless, sustainable and nature-inspired landscape environments tailored to your lifestyle.",
+      "button": "Contact Us",
+      "contactPath": "contact"
     }
   }
 }

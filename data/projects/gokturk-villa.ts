@@ -3,7 +3,7 @@ import { type Project } from '@/types/project';
 export const gokturkVilla: Project = {
   id: 'project-002',
   slug: 'gokturk-modern-villa-bahcesi',
-  featured: true,
+  featured: false,
   category: ['featured', 'villa'],
 
   completionYear: 2024,
