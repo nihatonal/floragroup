@@ -96,9 +96,8 @@ export default function ProjectsHero({ locale }: ProjectsHeroProps) {
 
       <div className="absolute z-[99] bottom-7 left-1/2 flex -translate-x-1/2 items-center gap-4">
         {projects.map((item, index) => (
-          <>
+          <div key={item.id + "bullet01"}>
             <button
-              key={item.id + index}
               type="button"
               onClick={() => setActiveIndex(index)}
               className={cn(
@@ -110,7 +109,6 @@ export default function ProjectsHero({ locale }: ProjectsHeroProps) {
               aria-label={t("goToProject", { number: index + 1 })}
             />
             <button
-              key={item.id}
               type="button"
               onClick={() => setActiveIndex(index)}
               className={cn(
@@ -131,7 +129,7 @@ export default function ProjectsHero({ locale }: ProjectsHeroProps) {
                 )}
               ></span>
             </button>
-          </>
+          </div>
         ))}
       </div>
     </section>

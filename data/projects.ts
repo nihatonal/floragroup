@@ -15,14 +15,14 @@ import {
 
 export const projects: Project[] = [
   kemerCountry,
-  gokturkVilla,
-  cesmeSahil,
+  bursaBoutiqueHotel,
   bodrumTeras,
   sapancaGolEvi,
   antalyaResort,
   kemerMarina,
   istanbulRooftop,
-  bursaBoutiqueHotel,
+  gokturkVilla,
+  cesmeSahil,
   ankaraCorporateCampus,
 ];
 
