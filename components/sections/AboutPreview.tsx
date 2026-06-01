@@ -70,7 +70,7 @@ export default function AboutPreview() {
                 src="/images/about-garden.webp"
                 alt={t("imageAlt")}
                 fill
-                quality={75}
+                quality={65}
                  loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 70vw"
                 className="object-cover object-center scale-[1.04]"

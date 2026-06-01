@@ -30,7 +30,7 @@ export default function ContactSection() {
             src="/images/project-main.webp"
             alt=""
             fill
-            quality={75}
+            quality={65}
             sizes="(max-width: 767px) 100vw, 50vw"
             className="scale-110 object-cover opacity-45"
           />

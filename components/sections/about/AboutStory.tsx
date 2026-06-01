@@ -56,7 +56,7 @@ export default function AboutStory() {
                 src="/images/about-story.webp"
                 alt={t("imageAlt")}
                 fill
-                quality={100}
+                quality={65}
                 sizes="(max-width: 1024px) 100vw, 55vw"
                 className="scale-[1.05] object-cover object-center"
               />

@@ -20,7 +20,7 @@ export default function AboutHero() {
             alt={t("imageAlt")}
             fill
             priority
-            quality={100}
+            quality={75}
             sizes="(max-width: 767px) 100vw, 0vw"
             className="object-cover object-[25%_32%] saturate-[1.04] contrast-[1.02]"
           />
@@ -69,7 +69,7 @@ export default function AboutHero() {
                 alt={t("imageAlt")}
                 fill
                 priority
-                quality={100}
+                quality={90}
                 sizes="(min-width: 768px) 100vw, 0vw"
                 className="object-cover object-center saturate-[1.05] contrast-[1.03]"
               />

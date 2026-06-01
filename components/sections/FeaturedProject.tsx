@@ -58,7 +58,7 @@ export default function FeaturedProject() {
               src={project.image}
               alt={t(`projects.${project.key}.imageAlt`)}
               fill
-              quality={75}
+              quality={65}
               loading="lazy"
               sizes="(max-width: 767px) 100vw, 50vw"
               className={`scale-[1.04] object-cover transition-all duration-1000 ease-out ${

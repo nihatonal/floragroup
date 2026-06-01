@@ -14,7 +14,7 @@ const inter = Inter({
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400"],
   variable: "--font-display",
   display: "swap",
   preload: true,
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "Flora Adında; peyzaj mimarisi, bahçe tasarımı ve uygulama hizmetleriyle doğayla uyumlu, zamansız yaşam alanları tasarlar.",
   keywords: [
     "peyzaj",
-    "peyzaj tasarımı",
+    "peyzaj tasarımı",  
     "bahçe tasarımı",
     "flora tasarım",
     "landscape design",

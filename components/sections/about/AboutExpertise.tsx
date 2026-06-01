@@ -73,7 +73,7 @@ export default function AboutExpertise() {
                 src="/images/gallery-05.webp"
                 alt={t('imageAlt')}
                 fill
-                quality={100}
+                quality={65}
                 sizes="(max-width: 1024px) 100vw, 60vw"
                 className="scale-[1.04] object-cover object-center"
               />

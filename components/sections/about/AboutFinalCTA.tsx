@@ -20,7 +20,7 @@ export default function AboutFinalCTA() {
             src="/images/about-cta.webp"
             alt={t('imageAlt')}
             fill
-            quality={100}
+            quality={65}
             sizes="100vw"
             className="scale-[1.04] object-cover object-center"
           />

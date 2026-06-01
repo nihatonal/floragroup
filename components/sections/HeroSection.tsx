@@ -23,7 +23,7 @@ export default function HeroSection() {
             fill
             priority
             fetchPriority="high"
-            quality={75}
+            quality={65}
             sizes="100vw"
             className="object-cover object-center saturate-[1.05] contrast-[1.03]"
           />
@@ -42,7 +42,7 @@ export default function HeroSection() {
                 alt={t("imageAlt")}
                 fill
                 priority
-                quality={100}
+                quality={90}
                 sizes="(min-width: 768px) 100vw, 0vw"
                 className="object-cover object-center saturate-[1.05] contrast-[1.03]"
               />
