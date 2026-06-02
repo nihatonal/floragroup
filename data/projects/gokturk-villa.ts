@@ -1,10 +1,14 @@
-import { type Project } from '@/types/project';
+import { type Project } from "@/types/project";
 
 export const gokturkVilla: Project = {
-  id: 'project-002',
-  slug: 'gokturk-modern-villa-bahcesi',
+  id: "project-002",
+  slug: {
+  tr: 'gokturk-modern-villa-bahcesi',
+  en: 'gokturk-modern-villa-garden',
+  ru: 'sovremennyy-sad-villy-gokturk',
+},
   featured: false,
-  category: ['featured', 'villa'],
+  category: ["featured", "villa"],
 
   completionYear: 2024,
   area: 850,
@@ -12,100 +16,176 @@ export const gokturkVilla: Project = {
   seasonUsage: 4,
 
   title: {
-    tr: 'Göktürk Modern Villa Bahçesi',
-    en: 'Göktürk Modern Villa Garden',
-    ru: 'Современный сад виллы в Гёктюрке',
+    tr: "Göktürk Modern Villa Bahçesi",
+    en: "Göktürk Modern Villa Garden",
+    ru: "Современный сад виллы в Гёктюрке",
   },
 
-  excerpt: {
-    tr: 'Modern villa yaşamına uygun, sakin, düzenli ve fonksiyonel bir dış mekan tasarımı.',
-    en: 'A calm, structured and functional outdoor design tailored to modern villa living.',
-    ru: 'Спокойный, структурированный и функциональный сад для современной виллы.',
-  },
+ excerpt: {
+  tr: 'Modern villa yaşamını tamamlayan, doğal dokular, sakin peyzaj kompozisyonları ve yıl boyu kullanılabilir açık alanlar sunan premium bahçe tasarımı.',
+  en: 'A premium garden design featuring natural textures, elegant planting compositions, and outdoor spaces designed for year-round villa living.',
+  ru: 'Премиальный сад для современной виллы с природными материалами, выразительным озеленением и комфортными пространствами для круглогодичного использования.',
+},
 
   location: {
-    tr: 'İstanbul',
-    en: 'Istanbul',
-    ru: 'Стамбул',
+    tr: "İstanbul",
+    en: "Istanbul",
+    ru: "Стамбул",
   },
 
   projectType: {
-    tr: 'Villa Bahçesi',
-    en: 'Villa Garden',
-    ru: 'Сад виллы',
+    tr: "Villa Bahçesi",
+    en: "Villa Garden",
+    ru: "Сад виллы",
   },
 
   images: {
-    cover: '/images/projects/gokturk-villa/cover.webp',
-    hero: '/images/projects/gokturk-villa/hero.webp',
+    cover: "/images/projects/gokturk-villa/cover.webp",
+    hero: "/images/projects/gokturk-villa/hero.webp",
     gallery: [
-      '/images/projects/gokturk-villa/gallery-01.webp',
-      '/images/projects/gokturk-villa/gallery-02.webp',
-      '/images/projects/gokturk-villa/gallery-03.webp',
-      '/images/projects/gokturk-villa/gallery-04.webp',
-      '/images/projects/gokturk-villa/gallery-05.webp',
+      "/images/projects/gokturk-villa/gallery-01.webp",
+      "/images/projects/gokturk-villa/gallery-02.webp",
+      "/images/projects/gokturk-villa/gallery-03.webp",
+      "/images/projects/gokturk-villa/gallery-04.webp",
+      "/images/projects/gokturk-villa/gallery-05.webp",
     ],
   },
 
   story: {
     tr: [
-      'Göktürk’teki modern villa için hazırlanan bu proje, sade çizgiler ve doğal dokular arasında güçlü bir denge kurar.',
-      'Bahçe; dinlenme, sosyalleşme ve günlük kullanım ihtiyaçlarına göre bölümlendirildi.',
-      'Düşük bakım gerektiren bitki kurgusu ve sıcak aydınlatma detaylarıyla dört mevsim kullanılabilir bir atmosfer oluşturuldu.',
+      "Modern Villa Yaşamına Doğal Bir Çerçeve",
+
+      "Göktürk’te konumlanan bu villa bahçesi projesinde amaç, çağdaş mimariyi destekleyen sakin, rafine ve fonksiyonel bir dış mekan deneyimi oluşturmaktı.",
+
+      "Bahçe genelinde doğal taş yüzeyler, her dem yeşil bitkiler ve yumuşak geçişli peyzaj katmanları kullanılarak mimari ile doğa arasında güçlü bir denge kuruldu. Dinlenme, sosyalleşme ve günlük kullanım senaryoları ayrı zonlar halinde planlandı.",
+
+      "Dört mevsim görsel süreklilik sağlayan bitki seçimi ve akşam kullanımını destekleyen sıcak aydınlatma detayları sayesinde bahçe, yıl boyunca yaşayan bir açık alan deneyimi sunmaktadır.",
     ],
+
     en: [
-      'Designed for a modern villa in Göktürk, this project balances clean lines with natural textures.',
-      'The garden was organized around relaxation, social use and daily outdoor living.',
-      'A low-maintenance planting strategy and warm lighting details created an atmosphere suitable for all seasons.',
+      "A Natural Extension of Contemporary Villa Living",
+
+      "Located in Göktürk, this villa garden was designed to create a calm, refined, and highly functional outdoor environment that complements the contemporary architecture.",
+
+      "Natural stone surfaces, evergreen planting and layered landscape compositions establish a strong balance between architecture and nature. Dedicated zones for relaxation, social gatherings and everyday use were carefully integrated into the design.",
+
+      "Seasonal planting interest and warm evening lighting ensure that the garden remains inviting and functional throughout the entire year.",
     ],
+
     ru: [
-      'Проект современной виллы в Гёктюрке сочетает чистые линии и природные фактуры.',
-      'Сад организован для отдыха, общения и повседневного использования.',
-      'Посадка с низким уходом и тёплое освещение создают атмосферу для круглогодичного использования.',
+      "Природное продолжение современной виллы",
+
+      "Этот проект сада для виллы в Гёктюрке был создан для формирования спокойной, элегантной и функциональной среды, гармонирующей с современной архитектурой.",
+
+      "Натуральный камень, вечнозеленые растения и многослойное озеленение обеспечивают баланс между архитектурой и природой. Пространство разделено на зоны отдыха, общения и повседневного использования.",
+
+      "Благодаря круглогодичной декоративности растений и теплому вечернему освещению сад остается комфортным в любое время года.",
     ],
   },
 
   approach: {
     tr: [
       {
-        title: 'Modern Çizgi',
-        items: ['Net sınırlar oluşturuldu', 'Mimariyle uyumlu peyzaj dili kuruldu'],
+        title: "Modern Mimari",
+        items: [
+          "Mimari ile bütünleşen peyzaj dili",
+          "Temiz geometriler ve net sınırlar",
+          "Minimal ve zamansız tasarım yaklaşımı",
+        ],
       },
       {
-        title: 'Sosyal Kullanım',
-        items: ['Oturma alanları tanımlandı', 'Akşam kullanımına uygun ışık senaryosu hazırlandı'],
+        title: "Açık Alan Yaşamı",
+        items: [
+          "Dinlenme ve sosyalleşme alanları",
+          "Günlük kullanım senaryoları",
+          "Bahçe ile iç mekan ilişkisi",
+        ],
       },
       {
-        title: 'Kolay Bakım',
-        items: ['Düşük bakım isteyen türler seçildi', 'Otomatik sulama sistemi planlandı'],
+        title: "Düşük Bakım",
+        items: [
+          "Her dem yeşil bitki türleri",
+          "Otomatik sulama sistemi",
+          "Kolay sürdürülebilir peyzaj kurgusu",
+        ],
+      },
+      {
+        title: "Dört Mevsim Kullanım",
+        items: [
+          "Yıl boyu yeşil görünüm",
+          "Mevsimsel vurgu bitkileri",
+          "Akşam kullanımını destekleyen aydınlatma",
+        ],
       },
     ],
+
     en: [
       {
-        title: 'Modern Lines',
-        items: ['Clear boundaries were created', 'A landscape language aligned with the architecture was developed'],
+        title: "Contemporary Architecture",
+        items: [
+          "Landscape integrated with architecture",
+          "Clean geometries and defined boundaries",
+          "Minimal and timeless design language",
+        ],
       },
       {
-        title: 'Social Use',
-        items: ['Seating areas were defined', 'Lighting scenarios were planned for evening use'],
+        title: "Outdoor Living",
+        items: [
+          "Spaces for relaxation and gathering",
+          "Everyday use scenarios",
+          "Strong indoor-outdoor relationship",
+        ],
       },
       {
-        title: 'Easy Maintenance',
-        items: ['Low-maintenance species were selected', 'Automatic irrigation was planned'],
+        title: "Low Maintenance",
+        items: [
+          "Evergreen planting palette",
+          "Automatic irrigation system",
+          "Sustainable landscape strategy",
+        ],
+      },
+      {
+        title: "Year-Round Enjoyment",
+        items: [
+          "Permanent green structure",
+          "Seasonal accent planting",
+          "Lighting designed for evening use",
+        ],
       },
     ],
+
     ru: [
       {
-        title: 'Современные линии',
-        items: ['Созданы чёткие границы', 'Ландшафтный язык согласован с архитектурой'],
+        title: "Современная архитектура",
+        items: [
+          "Ландшафт интегрирован с архитектурой",
+          "Чистая геометрия и четкие границы",
+          "Минималистичный и вне времени дизайн",
+        ],
       },
       {
-        title: 'Социальное использование',
-        items: ['Определены зоны отдыха', 'Спланированы сценарии вечернего освещения'],
+        title: "Жизнь на открытом воздухе",
+        items: [
+          "Зоны отдыха и общения",
+          "Сценарии повседневного использования",
+          "Связь между домом и садом",
+        ],
       },
       {
-        title: 'Простой уход',
-        items: ['Выбраны растения с низким уходом', 'Запланирована автоматическая система полива'],
+        title: "Простой уход",
+        items: [
+          "Вечнозеленые растения",
+          "Автоматическая система полива",
+          "Устойчивая ландшафтная концепция",
+        ],
+      },
+      {
+        title: "Круглогодичное использование",
+        items: [
+          "Постоянная зеленая структура",
+          "Сезонные акцентные растения",
+          "Освещение для вечернего использования",
+        ],
       },
     ],
   },
@@ -113,63 +193,147 @@ export const gokturkVilla: Project = {
   details: {
     tr: [
       {
-        title: 'Bitki Kurgusu',
-        items: ['Her dem yeşil türler', 'Minimal çalı grupları', 'Mevsimsel renk geçişleri'],
+        title: "Bitkisel Tasarım",
+        items: [
+          "280+ bitki türü",
+          "Her dem yeşil kompozisyonlar",
+          "Mevsimsel renk geçişleri",
+        ],
       },
       {
-        title: 'Zemin & Malzeme',
-        items: ['Doğal taş yürüyüş yolları', 'Modern sert zemin geçişleri', 'Doku uyumu'],
+        title: "Bahçe Yaşamı",
+        items: [
+          "Dinlenme alanları",
+          "Sosyal kullanım mekanları",
+          "Aile yaşamını destekleyen açık alanlar",
+        ],
       },
       {
-        title: 'Aydınlatma',
-        items: ['Yol aydınlatmaları', 'Bitki vurguları', 'Sıcak dış mekan atmosferi'],
+        title: "Malzeme Dili",
+        items: [
+          "Doğal taş yürüyüş yolları",
+          "Minimal sert zemin tasarımı",
+          "Mimari ile uyumlu detaylar",
+        ],
+      },
+      {
+        title: "Aydınlatma",
+        items: [
+          "Yol ve yönlendirme ışıkları",
+          "Bitki vurgu aydınlatmaları",
+          "Sıcak ve davetkar atmosfer",
+        ],
       },
     ],
+
     en: [
       {
-        title: 'Planting',
-        items: ['Evergreen species', 'Minimal shrub groups', 'Seasonal color transitions'],
+        title: "Planting Design",
+        items: [
+          "280+ plant species",
+          "Evergreen compositions",
+          "Seasonal color transitions",
+        ],
       },
       {
-        title: 'Ground & Material',
-        items: ['Natural stone pathways', 'Modern hardscape transitions', 'Texture harmony'],
+        title: "Garden Living",
+        items: [
+          "Relaxation areas",
+          "Social gathering spaces",
+          "Outdoor zones supporting family life",
+        ],
       },
       {
-        title: 'Lighting',
-        items: ['Path lights', 'Plant highlights', 'Warm outdoor atmosphere'],
+        title: "Material Palette",
+        items: [
+          "Natural stone pathways",
+          "Minimal hardscape design",
+          "Architecturally integrated details",
+        ],
+      },
+      {
+        title: "Lighting Design",
+        items: [
+          "Path and wayfinding lighting",
+          "Plant accent illumination",
+          "Warm and welcoming atmosphere",
+        ],
       },
     ],
+
     ru: [
       {
-        title: 'Посадка',
-        items: ['Вечнозелёные виды', 'Минимальные группы кустарников', 'Сезонные цветовые переходы'],
+        title: "Озеленение",
+        items: [
+          "Более 280 видов растений",
+          "Вечнозеленые композиции",
+          "Сезонные цветовые акценты",
+        ],
       },
       {
-        title: 'Покрытия и материалы',
-        items: ['Дорожки из натурального камня', 'Современные переходы покрытий', 'Гармония фактур'],
+        title: "Жизнь в саду",
+        items: [
+          "Зоны отдыха",
+          "Пространства для общения",
+          "Открытые зоны для семейного отдыха",
+        ],
       },
       {
-        title: 'Освещение',
-        items: ['Подсветка дорожек', 'Акценты на растениях', 'Тёплая атмосфера'],
+        title: "Материалы",
+        items: [
+          "Дорожки из натурального камня",
+          "Минималистичные покрытия",
+          "Детали, интегрированные с архитектурой",
+        ],
+      },
+      {
+        title: "Освещение",
+        items: [
+          "Подсветка маршрутов",
+          "Акцентное освещение растений",
+          "Теплая и уютная атмосфера",
+        ],
       },
     ],
   },
 
   seo: {
     title: {
-      tr: 'Göktürk Modern Villa Bahçesi | Flora Adında',
-      en: 'Göktürk Modern Villa Garden | Flora Adında',
-      ru: 'Современный сад виллы в Гёктюрке | Flora Adında',
+      tr: "Göktürk Modern Villa Bahçesi | Flora Adında",
+      en: "Göktürk Modern Villa Garden | Flora Adında",
+      ru: "Современный сад виллы в Гёктюрке | Flora Adında",
     },
+
     description: {
-      tr: 'İstanbul Göktürk’te modern villa yaşamına uygun peyzaj ve bahçe tasarımı.',
-      en: 'Modern villa landscape and garden design in Göktürk, Istanbul.',
-      ru: 'Ландшафтный дизайн современной виллы в Гёктюрке, Стамбул.',
+      tr: "İstanbul Göktürk'te modern villa yaşamı için tasarlanan premium peyzaj projesi. Doğal taş yüzeyler, her dem yeşil bitkiler ve dört mevsim yaşayan bahçe tasarımı.",
+      en: "Premium villa landscape design in Göktürk, Istanbul featuring evergreen planting, natural stone materials and year-round outdoor living.",
+      ru: "Премиальный ландшафтный проект современной виллы в Гёктюрке с вечнозелеными растениями, натуральным камнем и комфортной средой круглый год.",
     },
+
     keywords: {
-      tr: ['göktürk villa bahçesi', 'modern bahçe tasarımı', 'istanbul peyzaj'],
-      en: ['modern villa garden', 'gokturk landscape', 'istanbul garden design'],
-      ru: ['сад виллы', 'ландшафт Гёктюрк', 'дизайн сада Стамбул'],
+      tr: [
+        "göktürk villa bahçesi",
+        "modern villa peyzajı",
+        "istanbul peyzaj tasarımı",
+        "villa bahçe tasarımı",
+        "lüks villa bahçesi",
+      ],
+
+      en: [
+        "modern villa garden",
+        "villa landscape design",
+        "gokturk landscape project",
+        "luxury villa garden",
+        "istanbul garden design",
+      ],
+
+      ru: [
+        "сад виллы",
+        "ландшафт виллы",
+        "современный сад",
+        "ландшафт Гёктюрк",
+        "дизайн сада Стамбул",
+      ],
     },
   },
 };

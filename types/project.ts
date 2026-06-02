@@ -30,7 +30,7 @@ export type ProjectSeo = {
 
 export type Project = {
   id: string;
-  slug: string;
+  slug: LocalizedText;
 
   title: LocalizedText;
   excerpt: LocalizedText;

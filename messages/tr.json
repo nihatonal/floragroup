@@ -364,7 +364,7 @@
 
   "projects": {
     "paths": {
-      "projects": "projeler"
+      "projects": "projelerimiz"
     },
     "hero": {
       "eyebrow": "Öne Çıkan Proje",
@@ -409,6 +409,40 @@
       "description": "Doğayla uyumlu, estetik ve sürdürülebilir mekanlar için bize ulaşın. Birlikte yaşam alanınızı dönüştürebiliriz.",
       "button": "İletişime Geçin",
       "contactPath": "iletisim"
+    }
+  },
+  "projectDetail": {
+    "hero": {
+      "breadcrumb": {
+        "home": "Ana Sayfa",
+        "projects": "Projelerimiz"
+      },
+      "share": "Paylaş",
+      "previous": "Önceki proje",
+      "next": "Sonraki proje"
+    },
+    "stats": {
+      "area": "Proje Alanı",
+      "plants": "Bitki Çeşidi",
+      "season": "Mevsim Kullanım",
+      "year": "Tamamlanma Yılı",
+      "type": "Konsept Tasarım"
+    },
+    "story": {
+      "label": "Proje Hikayesi"
+    },
+    "approach": {
+      "label": "Tasarım Yaklaşımı"
+    },
+     "gallery": {
+      "label": "Proje Galerisi",
+      "viewAll": "Tüm Görselleri Gör",
+      "close": "Galeriyi kapat",
+      "previous": "Önceki görsel",
+      "next": "Sonraki görsel"
+    },
+    "details": {
+      "label": "Projede Öne Çıkan Detaylar"
     }
   }
 }

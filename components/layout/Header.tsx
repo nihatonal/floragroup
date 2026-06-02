@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Container from "@/components/ui/Container";
 import { cn } from "@/lib/utils";
+import { getLocalizedPathname } from '@/lib/localized-path'
 import { type Locale } from "@/i18n/routing";
 
 export default function Header() {
@@ -52,21 +53,9 @@ export default function Header() {
     };
   }, [isMenuOpen]);
 
-  const getLocalizedPath = (nextLocale: Locale) => {
-    const segments = pathname.split("/").filter(Boolean);
-
-    if (segments.length === 0) {
-      return `/${nextLocale}`;
-    }
-
-    if (["tr", "en", "ru"].includes(segments[0])) {
-      segments[0] = nextLocale;
-    } else {
-      segments.unshift(nextLocale);
-    }
-
-    return `/${segments.join("/")}`;
-  };
+ const getLocalizedPath = (nextLocale: Locale) => {
+  return getLocalizedPathname(pathname, locale, nextLocale);
+};
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 px-3 pt-3 transition-all duration-500">

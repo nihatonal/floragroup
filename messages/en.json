@@ -407,5 +407,39 @@
       "button": "Contact Us",
       "contactPath": "contact"
     }
+  },
+  "projectDetail": {
+    "hero": {
+      "breadcrumb": {
+        "home": "Home",
+        "projects": "Projects"
+      },
+      "share": "Share",
+      "previous": "Previous project",
+      "next": "Next project"
+    },
+     "stats": {
+      "area": "Project Area",
+      "plants": "Plant Species",
+      "season": "Seasonal Use",
+      "year": "Completion Year",
+      "type": "Concept Design"
+    },
+    "story": {
+      "label": "Project Story"
+    },
+     "approach": {
+      "label": "Design Approach"
+    },
+     "gallery": {
+      "label": "Project Gallery",
+      "viewAll": "View All Images",
+      "close": "Close gallery",
+      "previous": "Previous image",
+      "next": "Next image"
+    },
+     "details": {
+      "label": "Project Highlights"
+    }
   }
 }

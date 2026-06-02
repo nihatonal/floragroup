@@ -43,12 +43,12 @@ export default function ProjectsHero({ locale }: ProjectsHeroProps) {
         />
 
         <div className="absolute inset-0 bg-black/45 md:hidden" />
-        <div className="absolute md:w-[60ch] lg:w-[80ch] inset-0 hidden bg-gradient-to-r from-flora-ivory via-flora-ivory/95 to-transparent md:block" />
+        <div className="absolute md:w-[60ch] lg:w-[90ch] inset-0 hidden bg-gradient-to-r from-flora-ivory via-flora-ivory/75 to-transparent md:block" />
         <div className="absolute inset-0 hidden bg-gradient-to-t from-black/10 via-transparent to-transparent md:block" />
       </div>
 
       <div className="relative z-10 mx-auto flex h-full w-full max-w-[1480px] items-end px-6 pb-14 pt-28 md:items-center md:px-16 md:pb-0 md:pt-24">
-        <div className="max-w-[560px] text-flora-ivory md:text-flora-forest">
+        <div className="max-w-[620px] text-flora-ivory md:text-flora-forest">
           <p className="mb-5 text-[11px] font-semibold uppercase tracking-[0.26em] text-flora-champagne">
             {t("eyebrow")}
           </p>
@@ -67,7 +67,7 @@ export default function ProjectsHero({ locale }: ProjectsHeroProps) {
           </p>
 
           <Link
-            href={`/${locale}/${tProjects("paths.projects")}/${project.slug}`}
+            href={`/${locale}/${tProjects("paths.projects")}/${project.slug[locale]}`}
             className="group mt-9 inline-flex items-center gap-5 border-b border-current/35 pb-3 text-[11px] font-bold uppercase tracking-[0.22em]"
           >
             {t("cta")}

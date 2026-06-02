@@ -1,4 +1,8 @@
-import { type Project, type ProjectCategory } from "@/types/project";
+import {
+  type Locale,
+  type Project,
+  type ProjectCategory,
+} from "@/types/project";
 
 import {
   kemerCountry,
@@ -40,8 +44,21 @@ export const projectCategories: {
   { key: "commercial", labelKey: "commercial" },
 ];
 
-export function getProjectBySlug(slug: string) {
-  return projects.find((project) => project.slug === slug);
+export function getProjectSlug(project: Project, locale: Locale) {
+  return project.slug[locale];
+}
+
+export function getProjectHref(
+  project: Project,
+  locale: Locale,
+  projectsPath: string,
+) {
+  return `/${locale}/${projectsPath}/${project.slug[locale]}`;
+}
+
+export function getProjectBySlug(slug: string, locale: Locale) {
+
+  return projects.find((project) => project.slug[locale] === slug);
 }
 
 export function getProjectsByCategory(category: "all" | ProjectCategory) {
@@ -50,13 +67,13 @@ export function getProjectsByCategory(category: "all" | ProjectCategory) {
   return projects.filter((project) => project.category.includes(category));
 }
 
-export function getRelatedProjects(slug: string, limit = 3) {
-  const currentProject = getProjectBySlug(slug);
+export function getRelatedProjects(slug: string, locale: Locale, limit = 3) {
+  const currentProject = getProjectBySlug(slug, locale);
 
   if (!currentProject) return projects.slice(0, limit);
 
   return projects
-    .filter((project) => project.slug !== slug)
+    .filter((project) => project.id !== currentProject.id)
     .filter((project) =>
       project.category.some((category) =>
         currentProject.category.includes(category),
@@ -66,5 +83,10 @@ export function getRelatedProjects(slug: string, limit = 3) {
 }
 
 export function getProjectSlugs() {
-  return projects.map((project) => project.slug);
+  return projects.flatMap((project) =>
+    (["tr", "en", "ru"] as const).map((locale) => ({
+      locale,
+      slug: project.slug[locale],
+    })),
+  );
 }

@@ -31,7 +31,7 @@ export default function ProjectsCTA({
 
             <Link
               href={`/${locale}/${t('contactPath')}`}
-              className="group inline-flex h-16 items-center justify-center gap-5 rounded-full bg-flora-ivory px-10 text-[11px] font-bold uppercase tracking-[0.22em] text-flora-forest transition-all duration-500 hover:px-12"
+              className="group inline-flex h-12 items-center justify-center gap-5 rounded-full bg-flora-ivory px-10 text-[11px] font-bold uppercase tracking-[0.22em] text-flora-forest transition-all duration-500 hover:px-12"
             >
               {t('button')}
 

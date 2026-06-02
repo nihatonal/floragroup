@@ -1,10 +1,14 @@
-import { type Project } from '@/types/project';
+import { type Project } from "@/types/project";
 
 export const kemerMarina: Project = {
-  id: 'project-007',
-  slug: 'kemer-marina-residence-peyzaji',
+  id: "project-007",
+  slug: {
+    tr: "kemer-marina-residence-peyzaji",
+    en: "kemer-marina-residence-landscape",
+    ru: "landshaft-rezidentsii-kemer-marina",
+  },
   featured: false,
-  category: ['commercial'],
+  category: ["commercial"],
 
   completionYear: 2022,
   area: 2600,
@@ -12,99 +16,175 @@ export const kemerMarina: Project = {
   seasonUsage: 4,
 
   title: {
-    tr: 'Kemer Marina Residence Peyzajı',
-    en: 'Kemer Marina Residence Landscape',
-    ru: 'Ландшафт резиденции Kemer Marina',
+    tr: "Kemer Marina Residence Peyzajı",
+    en: "Kemer Marina Residence Landscape",
+    ru: "Ландшафт резиденции Kemer Marina",
   },
 
   excerpt: {
-    tr: 'Rezidans yaşamına uygun, deniz etkisine dayanıklı, modern ve kontrollü ortak alan peyzajı.',
-    en: 'A modern shared landscape for residence living, adapted to marine conditions.',
-    ru: 'Современный общий ландшафт резиденции, адаптированный к морским условиям.',
+    tr: "Deniz etkisine dayanıklı bitkiler, güçlü yaya aksları ve prestijli ortak yaşam alanlarıyla tasarlanmış modern rezidans peyzajı.",
+    en: "A modern residence landscape shaped by marine-resilient planting, clear pedestrian axes and prestigious shared outdoor spaces.",
+    ru: "Современный ландшафт резиденции с устойчивыми к морскому климату растениями, четкими пешеходными маршрутами и престижными общими зонами.",
   },
 
   location: {
-    tr: 'Antalya',
-    en: 'Antalya',
-    ru: 'Анталия',
+    tr: "Antalya",
+    en: "Antalya",
+    ru: "Анталия",
   },
 
   projectType: {
-    tr: 'Rezidans Peyzajı',
-    en: 'Residence Landscape',
-    ru: 'Ландшафт резиденции',
+    tr: "Rezidans Peyzajı",
+    en: "Residence Landscape",
+    ru: "Ландшафт резиденции",
   },
 
   images: {
-    cover: '/images/projects/kemer-marina/cover.webp',
-    hero: '/images/projects/kemer-marina/hero.webp',
+    cover: "/images/projects/kemer-marina/cover.webp",
+    hero: "/images/projects/kemer-marina/hero.webp",
     gallery: [
-      '/images/projects/kemer-marina/gallery-01.webp',
-      '/images/projects/kemer-marina/gallery-02.webp',
-      '/images/projects/kemer-marina/gallery-03.webp',
-      '/images/projects/kemer-marina/gallery-04.webp',
+      "/images/projects/kemer-marina/gallery-01.webp",
+      "/images/projects/kemer-marina/gallery-02.webp",
+      "/images/projects/kemer-marina/gallery-03.webp",
+      "/images/projects/kemer-marina/gallery-04.webp",
     ],
   },
 
   story: {
     tr: [
-      'Kemer Marina Residence projesinde amaç, ortak kullanım alanlarında düzenli, dayanıklı ve estetik bir peyzaj dili oluşturmaktı.',
-      'Deniz etkisi, yaya sirkülasyonu ve kullanıcı yoğunluğu dikkate alınarak bitki ve malzeme seçimleri yapıldı.',
-      'Sonuçta, yıl boyunca bakımlı ve prestijli görünen bir açık alan deneyimi oluşturuldu.',
+      "Deniz Kıyısında Prestijli Ortak Yaşam",
+
+      "Kemer Marina Residence projesinde amaç, rezidans kullanıcılarının günlük yaşamını destekleyen, bakımlı ve prestijli görünen ortak açık alanlar oluşturmaktı.",
+
+      "Deniz etkisi, tuzlu hava, rüzgar ve yoğun kullanıcı sirkülasyonu dikkate alınarak hem bitki hem de malzeme seçimleri uzun ömürlü olacak şekilde planlandı.",
+
+      "Düzenli yeşil akslar, giriş vurguları, yaya rotaları ve düşük bakım gerektiren bitki kurgusu sayesinde proje, yıl boyunca kontrollü ve güçlü bir rezidans peyzajı kimliği sunmaktadır.",
     ],
+
     en: [
-      'The goal of Kemer Marina Residence was to create a structured, durable and aesthetic landscape language in shared outdoor areas.',
-      'Plant and material selections were made according to marine exposure, pedestrian circulation and user density.',
-      'The result is an outdoor experience that feels maintained and prestigious throughout the year.',
+      "Prestigious Shared Living by the Marina",
+
+      "The aim of the Kemer Marina Residence project was to create well-maintained and prestigious shared outdoor spaces that support the daily life of residence users.",
+
+      "Planting and material selections were planned for long-term durability by considering marine exposure, salty air, wind and high pedestrian circulation.",
+
+      "Structured green axes, emphasized entrances, clear walking routes and low-maintenance planting create a strong residence landscape identity throughout the year.",
     ],
+
     ru: [
-      'Целью проекта Kemer Marina Residence было создать структурированный, долговечный и эстетичный общий ландшафт.',
-      'Выбор растений и материалов выполнен с учётом морского климата, движения пешеходов и интенсивности использования.',
-      'В результате создано открытое пространство, сохраняющее ухоженный и престижный вид круглый год.',
+      "Престижная общая среда у марины",
+
+      "Целью проекта Kemer Marina Residence было создание ухоженных и престижных открытых пространств общего пользования, поддерживающих повседневную жизнь жителей.",
+
+      "Выбор растений и материалов выполнен с учетом морского климата, соленого воздуха, ветра и интенсивного движения пешеходов.",
+
+      "Структурированные зеленые оси, акцентные входные зоны, понятные маршруты и озеленение с низким уходом формируют выразительный характер резиденции круглый год.",
     ],
   },
 
   approach: {
     tr: [
       {
-        title: 'Rezidans Kullanımı',
-        items: ['Ortak alan sirkülasyonu planlandı', 'Bakım kolaylığı önceliklendirildi'],
+        title: "Rezidans Kullanımı",
+        items: [
+          "Ortak alan sirkülasyonu netleştirildi",
+          "Giriş ve karşılama alanları vurgulandı",
+          "Yoğun kullanıma uygun peyzaj dili kuruldu",
+        ],
       },
       {
-        title: 'Deniz Etkisi',
-        items: ['Tuz ve rüzgara dayanıklı türler seçildi', 'Dayanıklı zemin malzemeleri kullanıldı'],
+        title: "Deniz Etkisi",
+        items: [
+          "Tuz ve rüzgara dayanıklı bitkiler seçildi",
+          "Dayanıklı sert zemin malzemeleri tercih edildi",
+          "Marina iklimine uygun uzun ömürlü çözümler geliştirildi",
+        ],
       },
       {
-        title: 'Prestijli Görünüm',
-        items: ['Düzenli yeşil akslar oluşturuldu', 'Giriş alanları vurgulandı'],
+        title: "Prestijli Görünüm",
+        items: [
+          "Düzenli yeşil akslar oluşturuldu",
+          "Formlu çalı grupları kullanıldı",
+          "Kurumsal ve bakımlı ortak alan algısı güçlendirildi",
+        ],
+      },
+      {
+        title: "Kolay Bakım",
+        items: [
+          "Düşük bakım isteyen bitki türleri tercih edildi",
+          "Otomatik sulama sistemi planlandı",
+          "Düzenli budama stratejisi oluşturuldu",
+        ],
       },
     ],
+
     en: [
       {
-        title: 'Residence Use',
-        items: ['Shared area circulation was planned', 'Ease of maintenance was prioritized'],
+        title: "Residence Use",
+        items: [
+          "Shared area circulation was clarified",
+          "Entrance and arrival zones were emphasized",
+          "A landscape language suitable for intensive use was created",
+        ],
       },
       {
-        title: 'Marine Effect',
-        items: ['Salt and wind-resistant species were selected', 'Durable paving materials were used'],
+        title: "Marine Exposure",
+        items: [
+          "Salt and wind-resistant plants were selected",
+          "Durable hardscape materials were preferred",
+          "Long-lasting solutions adapted to marina conditions were developed",
+        ],
       },
       {
-        title: 'Prestigious Look',
-        items: ['Structured green axes were created', 'Entrance areas were emphasized'],
+        title: "Prestigious Appearance",
+        items: [
+          "Structured green axes were created",
+          "Formal shrub groups were used",
+          "A maintained and premium shared-space perception was strengthened",
+        ],
+      },
+      {
+        title: "Easy Maintenance",
+        items: [
+          "Low-maintenance plant species were selected",
+          "Automatic irrigation was planned",
+          "A regular pruning strategy was developed",
+        ],
       },
     ],
+
     ru: [
       {
-        title: 'Использование резиденции',
-        items: ['Спланировано движение в общих зонах', 'Упрощён уход за территорией'],
+        title: "Использование резиденции",
+        items: [
+          "Движение в общих зонах стало более понятным",
+          "Подчеркнуты входные и встречающие зоны",
+          "Создан ландшафт, подходящий для интенсивного использования",
+        ],
       },
       {
-        title: 'Морское воздействие',
-        items: ['Выбраны устойчивые к соли и ветру растения', 'Использованы долговечные покрытия'],
+        title: "Морское воздействие",
+        items: [
+          "Выбраны растения, устойчивые к соли и ветру",
+          "Предпочтены долговечные твердые покрытия",
+          "Разработаны решения, подходящие для условий марины",
+        ],
       },
       {
-        title: 'Престижный вид',
-        items: ['Созданы структурированные зелёные оси', 'Подчёркнуты входные зоны'],
+        title: "Престижный вид",
+        items: [
+          "Созданы структурированные зеленые оси",
+          "Использованы формированные группы кустарников",
+          "Усилено ощущение ухоженного премиального пространства",
+        ],
+      },
+      {
+        title: "Простой уход",
+        items: [
+          "Выбраны растения с низкими требованиями к уходу",
+          "Запланирована автоматическая система полива",
+          "Разработана стратегия регулярной обрезки",
+        ],
       },
     ],
   },
@@ -112,63 +192,150 @@ export const kemerMarina: Project = {
   details: {
     tr: [
       {
-        title: 'Bitki Seçimi',
-        items: ['Tuz etkisine dayanıklı türler', 'Formlu çalı grupları', 'Dört mevsim yeşil doku'],
+        title: "Bitki Seçimi",
+        items: [
+          "310+ bitki türü",
+          "Tuz ve rüzgara dayanıklı türler",
+          "Dört mevsim yeşil doku",
+        ],
       },
       {
-        title: 'Zemin',
-        items: ['Dayanıklı sert zemin', 'Yaya akışına uygun planlama', 'Giriş aksı vurgusu'],
+        title: "Ortak Alanlar",
+        items: [
+          "Yaya dostu yürüyüş aksları",
+          "Rezidans giriş vurguları",
+          "Sosyal kullanım noktaları",
+        ],
       },
       {
-        title: 'Bakım',
-        items: ['Kolay bakım planı', 'Otomatik sulama', 'Düzenli budama stratejisi'],
+        title: "Malzeme Dayanımı",
+        items: [
+          "Dayanıklı sert zeminler",
+          "Yoğun kullanıma uygun yüzeyler",
+          "Deniz iklimine uyumlu malzemeler",
+        ],
+      },
+      {
+        title: "Bakım Planı",
+        items: [
+          "Kolay bakım yaklaşımı",
+          "Otomatik sulama sistemi",
+          "Düzenli budama ve form kontrolü",
+        ],
       },
     ],
+
     en: [
       {
-        title: 'Plant Selection',
-        items: ['Salt-resistant species', 'Structured shrub groups', 'Four-season greenery'],
+        title: "Plant Selection",
+        items: [
+          "310+ plant species",
+          "Salt and wind-resistant plants",
+          "Four-season green structure",
+        ],
       },
       {
-        title: 'Ground',
-        items: ['Durable hardscape', 'Pedestrian-friendly planning', 'Entrance axis emphasis'],
+        title: "Shared Spaces",
+        items: [
+          "Pedestrian-friendly walking axes",
+          "Emphasized residence entrances",
+          "Social use points",
+        ],
       },
       {
-        title: 'Maintenance',
-        items: ['Easy maintenance plan', 'Automatic irrigation', 'Regular pruning strategy'],
+        title: "Material Durability",
+        items: [
+          "Durable hardscape surfaces",
+          "Finishes suitable for intensive use",
+          "Materials adapted to marine climate",
+        ],
+      },
+      {
+        title: "Maintenance Plan",
+        items: [
+          "Easy-maintenance approach",
+          "Automatic irrigation system",
+          "Regular pruning and form control",
+        ],
       },
     ],
+
     ru: [
       {
-        title: 'Подбор растений',
-        items: ['Устойчивые к соли виды', 'Формированные группы кустарников', 'Зелень круглый год'],
+        title: "Подбор растений",
+        items: [
+          "Более 310 видов растений",
+          "Растения, устойчивые к соли и ветру",
+          "Зеленая структура круглый год",
+        ],
       },
       {
-        title: 'Покрытия',
-        items: ['Прочные твёрдые покрытия', 'Планировка для пешеходного потока', 'Акцент входной оси'],
+        title: "Общие пространства",
+        items: [
+          "Пешеходные маршруты",
+          "Акцентные входные зоны резиденции",
+          "Места для социального использования",
+        ],
       },
       {
-        title: 'Уход',
-        items: ['Простой план ухода', 'Автоматический полив', 'Регулярная стратегия обрезки'],
+        title: "Долговечность материалов",
+        items: [
+          "Прочные твердые покрытия",
+          "Поверхности для интенсивного использования",
+          "Материалы, адаптированные к морскому климату",
+        ],
+      },
+      {
+        title: "План ухода",
+        items: [
+          "Простой подход к обслуживанию",
+          "Автоматическая система полива",
+          "Регулярная обрезка и контроль формы",
+        ],
       },
     ],
   },
 
   seo: {
     title: {
-      tr: 'Kemer Marina Residence Peyzajı | Flora Adında',
-      en: 'Kemer Marina Residence Landscape | Flora Adında',
-      ru: 'Ландшафт резиденции Kemer Marina | Flora Adında',
+      tr: "Kemer Marina Residence Peyzajı | Flora Adında",
+      en: "Kemer Marina Residence Landscape | Flora Adında",
+      ru: "Ландшафт резиденции Kemer Marina | Flora Adında",
     },
+
     description: {
-      tr: 'Kemer Marina Residence için modern ve dayanıklı ortak alan peyzaj tasarımı.',
-      en: 'Modern and durable shared landscape design for Kemer Marina Residence.',
-      ru: 'Современный и долговечный ландшафт общего пользования для Kemer Marina Residence.',
+      tr: "Kemer Marina Residence için tasarlanan modern rezidans peyzajı. Deniz etkisine dayanıklı bitkiler, prestijli giriş alanları ve düşük bakım gerektiren ortak alan tasarımı.",
+      en: "Modern residence landscape design for Kemer Marina Residence featuring marine-resilient planting, prestigious entrance areas and low-maintenance shared outdoor spaces.",
+      ru: "Современный ландшафт резиденции Kemer Marina с устойчивым к морскому климату озеленением, престижными входными зонами и общими пространствами с низким уходом.",
     },
+
     keywords: {
-      tr: ['rezidans peyzajı', 'kemer marina peyzaj', 'ortak alan bahçe tasarımı'],
-      en: ['residence landscape', 'kemer marina landscape', 'shared garden design'],
-      ru: ['ландшафт резиденции', 'kemer marina ландшафт', 'общий сад'],
+      tr: [
+        "kemer marina residence peyzajı",
+        "rezidans peyzaj tasarımı",
+        "ortak alan peyzajı",
+        "marina peyzajı",
+        "deniz etkisine dayanıklı bitkiler",
+        "antalya peyzaj projesi",
+      ],
+
+      en: [
+        "kemer marina residence landscape",
+        "residence landscape design",
+        "shared outdoor landscape",
+        "marina landscape design",
+        "marine resilient planting",
+        "antalya landscape project",
+      ],
+
+      ru: [
+        "ландшафт Kemer Marina Residence",
+        "ландшафт резиденции",
+        "общие открытые пространства",
+        "ландшафт марины",
+        "растения для морского климата",
+        "ландшафт Анталия",
+      ],
     },
   },
 };

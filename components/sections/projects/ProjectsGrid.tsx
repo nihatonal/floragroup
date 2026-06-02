@@ -162,7 +162,7 @@ export default function ProjectsGrid({ locale }: ProjectsGridProps) {
           {visibleProjects.slice(0, 6).map((project) => (
             <Link
               key={project.id}
-              href={`/${locale}/${t("paths.projects")}/${project.slug}`}
+             href={`/${locale}/${t('paths.projects')}/${project.slug[locale]}`}
               className="group overflow-hidden rounded-[1.25rem] border border-flora-forest/10 bg-flora-ivory shadow-soft"
             >
               <div className="relative aspect-[16/8.4] overflow-hidden">
@@ -197,7 +197,7 @@ export default function ProjectsGrid({ locale }: ProjectsGridProps) {
         {/* Selected project */}
         {selectedProject && (
           <Link
-            href={`/${locale}/${t("paths.projects")}/${selectedProject.slug}`}
+            href={`/${locale}/${t("paths.projects")}/${selectedProject.slug[locale]}`}
             className="group mt-8 grid overflow-hidden rounded-[1.5rem] bg-flora-forest text-flora-ivory md:mt-10 md:grid-cols-[1.15fr_1fr]"
           >
             <div className="relative min-h-[320px] overflow-hidden md:min-h-[460px]">
@@ -268,7 +268,7 @@ export default function ProjectsGrid({ locale }: ProjectsGridProps) {
           {visibleProjects.slice(6, 9).map((project) => (
             <Link
               key={project.id}
-              href={`/${locale}/${t("paths.projects")}/${project.slug}`}
+              href={`/${locale}/${t('paths.projects')}/${project.slug[locale]}`}
               className="group overflow-hidden rounded-[1.25rem] border border-flora-forest/10 bg-flora-ivory shadow-soft"
             >
               <div className="relative aspect-[16/8.4] overflow-hidden">

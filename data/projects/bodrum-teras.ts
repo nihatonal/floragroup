@@ -1,10 +1,14 @@
-import { type Project } from '@/types/project';
+import { type Project } from "@/types/project";
 
 export const bodrumTeras: Project = {
-  id: 'project-004',
-  slug: 'bodrum-teras-bahcesi',
+  id: "project-004",
+  slug: {
+    tr: "bodrum-teras-bahcesi",
+    en: "bodrum-terrace-garden",
+    ru: "terasnyy-sad-bodrum",
+  },
   featured: false,
-  category: ['terrace'],
+  category: ["terrace"],
 
   completionYear: 2023,
   area: 420,
@@ -12,99 +16,175 @@ export const bodrumTeras: Project = {
   seasonUsage: 4,
 
   title: {
-    tr: 'Bodrum Teras Bahçesi',
-    en: 'Bodrum Terrace Garden',
-    ru: 'Террасный сад в Бодруме',
+    tr: "Bodrum Teras Bahçesi",
+    en: "Bodrum Terrace Garden",
+    ru: "Террасный сад в Бодруме",
   },
 
   excerpt: {
-    tr: 'Kompakt bir teras alanında doğal gölge, Akdeniz bitkileri ve premium dış mekan konforu.',
-    en: 'Natural shade, Mediterranean planting and premium outdoor comfort in a compact terrace space.',
-    ru: 'Естественная тень, средиземноморские растения и премиальный комфорт на компактной террасе.',
+    tr: "Bodrum siluetine hakim, Akdeniz bitkileri, doğal gölge alanları ve premium dış mekan yaşamı için tasarlanmış çağdaş teras bahçesi.",
+    en: "A contemporary terrace garden overlooking Bodrum, designed with Mediterranean planting, natural shade, and premium outdoor living.",
+    ru: "Современный террасный сад с видом на Бодрум, сочетающий средиземноморские растения, естественную тень и комфортную жизнь на открытом воздухе.",
   },
 
   location: {
-    tr: 'Muğla',
-    en: 'Mugla',
-    ru: 'Мугла',
+    tr: "Muğla",
+    en: "Mugla",
+    ru: "Мугла",
   },
 
   projectType: {
-    tr: 'Teras Bahçesi',
-    en: 'Terrace Garden',
-    ru: 'Террасный сад',
+    tr: "Teras Bahçesi",
+    en: "Terrace Garden",
+    ru: "Террасный сад",
   },
 
   images: {
-    cover: '/images/projects/bodrum-teras/cover.webp',
-    hero: '/images/projects/bodrum-teras/hero.webp',
+    cover: "/images/projects/bodrum-teras/cover.webp",
+    hero: "/images/projects/bodrum-teras/hero.webp",
     gallery: [
-      '/images/projects/bodrum-teras/gallery-01.webp',
-      '/images/projects/bodrum-teras/gallery-02.webp',
-      '/images/projects/bodrum-teras/gallery-03.webp',
-      '/images/projects/bodrum-teras/gallery-04.webp',
+      "/images/projects/bodrum-teras/gallery-01.webp",
+      "/images/projects/bodrum-teras/gallery-02.webp",
+      "/images/projects/bodrum-teras/gallery-03.webp",
+      "/images/projects/bodrum-teras/gallery-04.webp",
     ],
   },
 
   story: {
     tr: [
-      'Bodrum’daki bu teras bahçesinde amaç, sınırlı alanda maksimum konfor ve doğal atmosfer oluşturmaktı.',
-      'Bitki kurgusu; rüzgar, güneş ve bakım ihtiyaçları dikkate alınarak tasarlandı.',
-      'Teras alanı, gün batımı kullanımı ve sosyal yaşam için sıcak aydınlatma detaylarıyla tamamlandı.',
+      "Manzaraya Açılan Bir Yaşam Terası",
+
+      "Bodrum'da konumlanan bu teras bahçesi projesinde amaç, sınırlı bir açık alanı gün boyu kullanılabilen konforlu ve karakterli bir yaşam alanına dönüştürmekti.",
+
+      "Akdeniz iklimine uyumlu bitki türleri, doğal taş yüzeyler ve gölgelikli oturma alanları sayesinde teras, hem gündüz hem de akşam saatlerinde aktif kullanılabilecek şekilde kurgulandı.",
+
+      "Bitkilendirme, manzaranın önüne geçmeden yeşil bir çerçeve oluşturacak şekilde tasarlanırken, aydınlatma senaryoları gün batımı sonrası atmosferi güçlendirmek için özel olarak planlandı.",
     ],
+
     en: [
-      'The goal of this terrace garden in Bodrum was to create maximum comfort and natural atmosphere in a limited space.',
-      'The planting strategy was designed around wind, sunlight and maintenance needs.',
-      'The terrace was completed with warm lighting details for sunset use and social living.',
+      "A Terrace Designed Around the View",
+
+      "Located in Bodrum, this terrace garden was created to transform a limited outdoor space into a comfortable and character-rich living environment that can be enjoyed throughout the day.",
+
+      "Mediterranean planting, natural stone materials and shaded seating areas were combined to create a terrace that remains functional from morning until late evening.",
+
+      "The planting design frames the surrounding views without obstructing them, while the lighting concept enhances the atmosphere after sunset.",
     ],
+
     ru: [
-      'Целью террасного сада в Бодруме было создать максимальный комфорт и природную атмосферу на ограниченной площади.',
-      'Посадка разработана с учётом ветра, солнца и ухода.',
-      'Терраса дополнена тёплым освещением для вечернего использования и отдыха.',
+      "Терраса, открытая к пейзажу",
+
+      "Этот проект террасного сада в Бодруме был создан для превращения ограниченного открытого пространства в комфортную и выразительную жилую среду.",
+
+      "Средиземноморские растения, натуральный камень и теневые зоны отдыха позволили создать террасу, которая остается удобной в течение всего дня.",
+
+      "Озеленение подчеркивает окружающие виды, не перекрывая их, а система освещения усиливает атмосферу после захода солнца.",
     ],
   },
 
   approach: {
     tr: [
       {
-        title: 'Kompakt Alan',
-        items: ['Alan verimli kullanıldı', 'Sirkülasyon netleştirildi'],
+        title: "Maksimum Alan Kullanımı",
+        items: [
+          "Kompakt alan verimli şekilde planlandı",
+          "Açık ve net dolaşım sağlandı",
+          "Çok amaçlı kullanım senaryoları geliştirildi",
+        ],
       },
       {
-        title: 'Akdeniz Dokusı',
-        items: ['Kuraklığa dayanıklı türler seçildi', 'Doğal saksı ve taş dokular kullanıldı'],
+        title: "Akdeniz Karakteri",
+        items: [
+          "Kuraklığa dayanıklı türler tercih edildi",
+          "Doğal taş ve seramik yüzeyler kullanıldı",
+          "Yerel peyzaj dili korundu",
+        ],
       },
       {
-        title: 'Akşam Kullanımı',
-        items: ['Sıcak ışık kurgusu yapıldı', 'Oturma alanı vurgulandı'],
+        title: "Konforlu Yaşam",
+        items: [
+          "Gölgelikli oturma alanları oluşturuldu",
+          "Rüzgar etkisi dikkate alındı",
+          "Uzun süreli kullanım desteklendi",
+        ],
+      },
+      {
+        title: "Akşam Atmosferi",
+        items: [
+          "Sıcak ışık senaryoları tasarlandı",
+          "Bitki ve mimari öğeler vurgulandı",
+          "Manzara deneyimi güçlendirildi",
+        ],
       },
     ],
+
     en: [
       {
-        title: 'Compact Space',
-        items: ['The area was used efficiently', 'Circulation was clarified'],
+        title: "Efficient Space Use",
+        items: [
+          "Compact area planned efficiently",
+          "Clear circulation routes established",
+          "Multi-functional use scenarios created",
+        ],
       },
       {
-        title: 'Mediterranean Texture',
-        items: ['Drought-tolerant species were selected', 'Natural pots and stone textures were used'],
+        title: "Mediterranean Character",
+        items: [
+          "Drought-tolerant species selected",
+          "Natural stone and ceramic materials used",
+          "Local landscape identity preserved",
+        ],
       },
       {
-        title: 'Evening Use',
-        items: ['Warm lighting was planned', 'The seating area was emphasized'],
+        title: "Outdoor Comfort",
+        items: [
+          "Shaded seating areas created",
+          "Wind exposure carefully considered",
+          "Long-term usability supported",
+        ],
+      },
+      {
+        title: "Evening Atmosphere",
+        items: [
+          "Warm lighting scenarios designed",
+          "Planting and architecture highlighted",
+          "View experience enhanced",
+        ],
       },
     ],
+
     ru: [
       {
-        title: 'Компактное пространство',
-        items: ['Площадь использована эффективно', 'Схема движения уточнена'],
+        title: "Эффективное использование пространства",
+        items: [
+          "Компактная площадь организована максимально эффективно",
+          "Созданы удобные маршруты движения",
+          "Разработаны многофункциональные сценарии использования",
+        ],
       },
       {
-        title: 'Средиземноморская фактура',
-        items: ['Выбраны засухоустойчивые растения', 'Использованы натуральные кашпо и камень'],
+        title: "Средиземноморский характер",
+        items: [
+          "Выбраны засухоустойчивые растения",
+          "Использованы натуральный камень и керамика",
+          "Сохранена местная ландшафтная идентичность",
+        ],
       },
       {
-        title: 'Вечернее использование',
-        items: ['Спланировано тёплое освещение', 'Акцентирована зона отдыха'],
+        title: "Комфорт на открытом воздухе",
+        items: [
+          "Созданы теневые зоны отдыха",
+          "Учтено воздействие ветра",
+          "Обеспечено длительное использование пространства",
+        ],
+      },
+      {
+        title: "Вечерняя атмосфера",
+        items: [
+          "Разработаны теплые сценарии освещения",
+          "Подчеркнуты растения и архитектурные элементы",
+          "Усилено восприятие панорамного вида",
+        ],
       },
     ],
   },
@@ -112,63 +192,145 @@ export const bodrumTeras: Project = {
   details: {
     tr: [
       {
-        title: 'Bitki Seçimi',
-        items: ['Zeytin', 'Lavanta', 'Aromatik Akdeniz türleri'],
+        title: "Bitki Paleti",
+        items: [
+          "Zeytin ağaçları",
+          "Lavanta ve aromatik türler",
+          "Kuraklığa dayanıklı Akdeniz bitkileri",
+        ],
       },
       {
-        title: 'Mobilya & Konfor',
-        items: ['Dış mekana uygun oturma alanı', 'Gölgelik çözümü', 'Rüzgar etkisine uygun yerleşim'],
+        title: "Oturma Alanları",
+        items: [
+          "Premium dış mekan mobilyaları",
+          "Gölgelikli yaşam alanları",
+          "Manzaraya yönlendirilmiş yerleşim",
+        ],
       },
       {
-        title: 'Işık',
-        items: ['Sıcak zemin ışıkları', 'Bitki vurgu aydınlatması', 'Akşam atmosferi'],
+        title: "Malzeme Dili",
+        items: [
+          "Doğal taş yüzeyler",
+          "Seramik detaylar",
+          "Doğal tonlarda malzeme seçimi",
+        ],
+      },
+      {
+        title: "Aydınlatma",
+        items: [
+          "Sıcak atmosfer ışıkları",
+          "Bitki vurgu aydınlatmaları",
+          "Akşam kullanımına uygun senaryolar",
+        ],
       },
     ],
+
     en: [
       {
-        title: 'Plant Selection',
-        items: ['Olive trees', 'Lavender', 'Aromatic Mediterranean species'],
+        title: "Plant Palette",
+        items: [
+          "Olive trees",
+          "Lavender and aromatic species",
+          "Drought-tolerant Mediterranean plants",
+        ],
       },
       {
-        title: 'Furniture & Comfort',
-        items: ['Outdoor seating area', 'Shade solution', 'Layout adapted to wind exposure'],
+        title: "Outdoor Living",
+        items: [
+          "Premium outdoor furniture",
+          "Shaded lounge areas",
+          "View-oriented layout",
+        ],
       },
       {
-        title: 'Lighting',
-        items: ['Warm floor lights', 'Plant accent lighting', 'Evening atmosphere'],
+        title: "Material Language",
+        items: [
+          "Natural stone surfaces",
+          "Ceramic details",
+          "Earth-toned materials",
+        ],
+      },
+      {
+        title: "Lighting Design",
+        items: [
+          "Warm ambient lighting",
+          "Plant accent lighting",
+          "Evening-use scenarios",
+        ],
       },
     ],
+
     ru: [
       {
-        title: 'Подбор растений',
-        items: ['Оливковые деревья', 'Лаванда', 'Ароматические средиземноморские виды'],
+        title: "Растительная палитра",
+        items: [
+          "Оливковые деревья",
+          "Лаванда и ароматические растения",
+          "Засухоустойчивые средиземноморские виды",
+        ],
       },
       {
-        title: 'Мебель и комфорт',
-        items: ['Зона отдыха для улицы', 'Решение для тени', 'Планировка с учётом ветра'],
+        title: "Зоны отдыха",
+        items: [
+          "Премиальная уличная мебель",
+          "Теневые зоны отдыха",
+          "Ориентация на панорамные виды",
+        ],
       },
       {
-        title: 'Освещение',
-        items: ['Тёплая подсветка пола', 'Акцентная подсветка растений', 'Вечерняя атмосфера'],
+        title: "Материалы",
+        items: [
+          "Натуральный камень",
+          "Керамические детали",
+          "Материалы природных оттенков",
+        ],
+      },
+      {
+        title: "Освещение",
+        items: [
+          "Теплое атмосферное освещение",
+          "Подсветка растений",
+          "Сценарии вечернего использования",
+        ],
       },
     ],
   },
 
   seo: {
     title: {
-      tr: 'Bodrum Teras Bahçesi | Flora Adında',
-      en: 'Bodrum Terrace Garden | Flora Adında',
-      ru: 'Террасный сад в Бодруме | Flora Adında',
+      tr: "Bodrum Teras Bahçesi | Flora Adında",
+      en: "Bodrum Terrace Garden | Flora Adında",
+      ru: "Террасный сад в Бодруме | Flora Adında",
     },
+
     description: {
-      tr: 'Bodrum’da kompakt teras alanı için Akdeniz dokulu peyzaj ve bahçe tasarımı.',
-      en: 'Mediterranean-inspired terrace garden design in Bodrum.',
-      ru: 'Средиземноморский дизайн террасного сада в Бодруме.',
+      tr: "Bodrum'da manzara odaklı teras bahçesi tasarımı. Akdeniz bitkileri, doğal malzemeler ve premium dış mekan yaşamı.",
+      en: "View-oriented terrace garden design in Bodrum featuring Mediterranean planting, natural materials, and premium outdoor living.",
+      ru: "Террасный сад в Бодруме с акцентом на панорамные виды, средиземноморские растения и комфортное использование открытого пространства.",
     },
+
     keywords: {
-      tr: ['bodrum teras bahçesi', 'teras peyzaj', 'akdeniz bahçesi'],
-      en: ['bodrum terrace garden', 'terrace landscape', 'mediterranean garden'],
-      ru: ['террасный сад Бодрум', 'ландшафт террасы', 'средиземноморский сад'],
+      tr: [
+        "bodrum teras bahçesi",
+        "teras peyzaj tasarımı",
+        "bodrum peyzaj projesi",
+        "akdeniz bahçesi",
+        "teras düzenleme",
+      ],
+      en: [
+        "bodrum terrace garden",
+        "terrace landscape design",
+        "mediterranean terrace garden",
+        "rooftop garden bodrum",
+        "outdoor living design",
+      ],
+      ru: [
+        "террасный сад Бодрум",
+        "ландшафт террасы",
+        "средиземноморский сад",
+        "терраса с видом",
+        "ландшафтный дизайн террасы",
+      ],
     },
   },
 };
