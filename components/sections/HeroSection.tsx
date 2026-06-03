@@ -64,7 +64,7 @@ export default function HeroSection() {
           </FadeUp>
 
           {/* <FadeUp delay={0.1}> */}
-            <h1 className="max-w-[9.5ch] font-display text-[clamp(3.8rem,16vw,5.6rem)] leading-[0.86] tracking-[-0.055em] text-flora-forest md:text-[clamp(4rem,8vw,8.5rem)] md:leading-[0.84]">
+            <h1 className="max-w-[9.5ch] font-serif md:font-display text-[clamp(3.8rem,16vw,5.6rem)] leading-[0.86] tracking-[-0.055em] text-flora-forest md:text-[clamp(4rem,8vw,8.5rem)] md:leading-[0.84]">
               {t("title")}
             </h1>
           {/* </FadeUp> */}
