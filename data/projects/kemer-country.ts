@@ -300,9 +300,9 @@ export const kemerCountry: Project = {
 
   seo: {
     title: {
-      tr: "Kemer Country Bahçe Tasarımı | Flora Adında",
-      en: "Kemer Country Garden Design | Flora Adında",
-      ru: "Дизайн сада Kemer Country | Flora Adında",
+      tr: "Kemer Country Bahçe Tasarımı | Flora Studio",
+      en: "Kemer Country Garden Design | Flora Studio",
+      ru: "Дизайн сада Kemer Country | Flora Studio",
     },
 
     description: {

@@ -299,9 +299,9 @@ export const gokturkVilla: Project = {
 
   seo: {
     title: {
-      tr: "Göktürk Modern Villa Bahçesi | Flora Adında",
-      en: "Göktürk Modern Villa Garden | Flora Adında",
-      ru: "Современный сад виллы в Гёктюрке | Flora Adında",
+      tr: "Göktürk Modern Villa Bahçesi | Flora Studio",
+      en: "Göktürk Modern Villa Garden | Flora Studio",
+      ru: "Современный сад виллы в Гёктюрке | Flora Studio",
     },
 
     description: {

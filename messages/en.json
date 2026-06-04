@@ -1,7 +1,7 @@
 {
   "header": {
     "brand": {
-      "name": "Flora Adında",
+      "name": "Flora Studio",
       "tagline": "Landscape Design"
     },
     "nav": {
@@ -23,14 +23,14 @@
     }
   },
   "footer": {
-    "eyebrow": "Flora Adında",
+    "eyebrow": "Flora Studio",
     "statement": {
       "line1": "Nature deserves",
       "line2": "timeless spaces."
     },
     "description": "We create premium landscape design, natural living areas and timeless outdoor experiences.",
     "brand": {
-      "name": "Flora Adında",
+      "name": "Flora Studio",
       "tagline": "Landscape Design Studio"
     },
     "navigation": {
@@ -55,7 +55,7 @@
       "location": "Izmir / Türkiye"
     },
     "cta": "Contact Us",
-    "copyright": "© 2026 Flora Adında. All rights reserved."
+    "copyright": "© 2026 Flora Studio. All rights reserved."
   },
   "home": {
     "hero": {
@@ -234,6 +234,10 @@
     }
   },
   "about": {
+    "meta": {
+      "title": "About Us | Flora Adında",
+      "description": "Flora Adında creates landscape designs for villa gardens, hotel landscapes, corporate campuses and bespoke outdoor spaces."
+    },
     "hero": {
       "label": "About Us",
       "title": "We design timeless living spaces in harmony with nature.",
@@ -253,7 +257,7 @@
     "story": {
       "label": "Our Story",
       "title": "Inspired by nature, designed for people.",
-      "paragraph1": "Flora Adında is a landscape architecture and garden design studio dedicated to bringing the elegance of nature into contemporary living environments.",
+      "paragraph1": "Flora Studio is a landscape architecture and garden design studio dedicated to bringing the elegance of nature into contemporary living environments.",
       "paragraph2": "We shape every project according to the spirit of its location, the needs of its users, and its aesthetic aspirations, creating sustainable and enduring outdoor spaces.",
       "cta": "Our Approach",
       "imageAlt": "Natural garden landscape with stone pathway and lush greenery"
@@ -288,7 +292,7 @@
     "founder": {
       "label": "Founder’s Perspective",
       "quote": "For us, landscape is not only about placing plants, but designing a living experience.",
-      "name": "Flora Adında",
+      "name": "Flora Studio",
       "role": "Founder & Landscape Design Team",
       "imageAlt": "Landscape design team working in studio"
     },
@@ -362,6 +366,10 @@
   },
 
   "projects": {
+    "meta": {
+      "title": "Projects | Flora Studio",
+      "description": "Explore selected landscape projects by Flora Studio, including villa gardens, hotel landscapes, corporate spaces and terrace gardens."
+    },
     "paths": {
       "projects": "projects"
     },
@@ -418,7 +426,7 @@
       "previous": "Previous project",
       "next": "Next project"
     },
-     "stats": {
+    "stats": {
       "area": "Project Area",
       "plants": "Plant Species",
       "season": "Seasonal Use",
@@ -428,18 +436,80 @@
     "story": {
       "label": "Project Story"
     },
-     "approach": {
+    "approach": {
       "label": "Design Approach"
     },
-     "gallery": {
+    "gallery": {
       "label": "Project Gallery",
       "viewAll": "View All Images",
       "close": "Close gallery",
       "previous": "Previous image",
       "next": "Next image"
     },
-     "details": {
+    "details": {
       "label": "Project Highlights"
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact | Flora Studio",
+      "description": "Get in touch with Flora Studio for landscape design, implementation and consultancy projects."
+    },
+    "hero": {
+      "label": "Contact",
+      "title": "Contact",
+      "description": "Have a project in mind? Contact us for landscape design, implementation or consultancy.",
+      "location": "Izmir / Turkey",
+      "phone": "+90 232 123 45 67",
+      "phoneHref": "+902321234567",
+      "email": "hello@floraadinda.com",
+      "imageAlt": "Natural garden pathway designed with Mediterranean planting"
+    },
+
+    "form": {
+      "title": "Let's talk about your next project.",
+      "description": "Villa gardens, hotel landscapes, corporate campuses, terrace gardens, and bespoke outdoor projects.",
+      "fields": {
+        "name": "Full Name",
+        "email": "Email",
+        "phone": "Phone",
+        "projectType": "Project Type",
+        "projectTypePlaceholder": "Select project type",
+        "message": "Message"
+      },
+      "options": {
+        "villa": "Villa Garden",
+        "hotel": "Hotel Landscape",
+        "commercial": "Commercial Space",
+        "terrace": "Terrace Garden",
+        "consultancy": "Consultancy"
+      },
+      "submit": "Send"
+    },
+    "closing": {
+      "areasTitle": "Service Areas",
+
+      "cities": [
+        "Istanbul",
+        "Ankara",
+        "Izmir",
+        "Bursa",
+        "Antalya",
+        "Mugla",
+        "Sapanca"
+      ],
+
+      "instagram": {
+        "title": "Follow our latest projects.",
+        "handle": "@floraadinda",
+        "button": "Instagram"
+      },
+
+      "cta": {
+        "title": "Let's work together",
+        "description": "Let's create your dream outdoor living space together.",
+        "button": "Contact via WhatsApp"
+      }
     }
   }
 }

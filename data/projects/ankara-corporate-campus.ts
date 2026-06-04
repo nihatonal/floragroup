@@ -296,9 +296,9 @@ export const ankaraCorporateCampus: Project = {
 
   seo: {
     title: {
-      tr: "Ankara Kurumsal Kampüs Peyzajı | Flora Adında",
-      en: "Ankara Corporate Campus Landscape | Flora Adında",
-      ru: "Ландшафт корпоративного кампуса Анкары | Flora Adında",
+      tr: "Ankara Kurumsal Kampüs Peyzajı | Flora Studio",
+      en: "Ankara Corporate Campus Landscape | Flora Studio",
+      ru: "Ландшафт корпоративного кампуса Анкары | Flora Studio",
     },
 
     description: {

@@ -1,7 +1,7 @@
 {
   "header": {
     "brand": {
-      "name": "Flora Adında",
+      "name": "Flora Studio",
       "tagline": "Landscape Design"
     },
     "nav": {
@@ -23,14 +23,14 @@
     }
   },
   "footer": {
-    "eyebrow": "Flora Adında",
+    "eyebrow": "Flora Studio",
     "statement": {
       "line1": "Doğa zamansız",
       "line2": "mekanları hak eder."
     },
     "description": "Premium peyzaj tasarımı, doğal yaşam alanları ve zamansız dış mekan deneyimleri yaratıyoruz.",
     "brand": {
-      "name": "Flora Adında",
+      "name": "Flora Studio",
       "tagline": "Landscape Design Studio"
     },
     "navigation": {
@@ -48,7 +48,7 @@
       "location": "İzmir / Türkiye"
     },
     "cta": "İletişime Geç",
-    "copyright": "© 2026 Flora Adında. Tüm hakları saklıdır.",
+    "copyright": "© 2026 Flora Studio. Tüm hakları saklıdır.",
     "services": {
       "title": "Hizmetler",
       "landscape": "Peyzaj Tasarımı",
@@ -171,7 +171,7 @@
       }
     },
     "whyChooseUs": {
-      "label": "Flora Adında Farkı",
+      "label": "Flora Studio Farkı",
       "title": "Neden bizi tercih ediyorlar?",
       "description": "Tasarım, uygulama ve bakım sürecini tek bir estetik çizgide birleştirerek güven veren, uzun ömürlü peyzaj alanları oluşturuyoruz.",
       "items": {
@@ -235,6 +235,10 @@
     }
   },
   "about": {
+    "meta": {
+      "title": "Hakkımızda | Flora Adında",
+      "description": "Flora Adında; villa bahçeleri, otel peyzajları, kurumsal kampüsler ve özel dış mekan projelerinde doğayla uyumlu peyzaj tasarımı sunar."
+    },
     "hero": {
       "label": "Hakkımızda",
       "title": "Doğayla uyumlu, zamansız yaşam alanları tasarlıyoruz.",
@@ -245,13 +249,13 @@
     "story": {
       "label": "Hikayemiz",
       "title": "Doğadan ilham alıyor, insan odaklı tasarlıyoruz.",
-      "paragraph1": "Flora Adında, peyzaj mimarlığı ve bahçe tasarımı alanında doğanın zarafetini yaşam alanlarına taşıyan bir tasarım stüdyosudur.",
+      "paragraph1": "Flora Studio, peyzaj mimarlığı ve bahçe tasarımı alanında doğanın zarafetini yaşam alanlarına taşıyan bir tasarım stüdyosudur.",
       "paragraph2": "Her projeyi bulunduğu coğrafyanın ruhuna, kullanıcıların ihtiyaçlarına ve estetik beklentilerine göre şekillendirir; sürdürülebilir ve uzun ömürlü çözümler üretiriz.",
       "cta": "Yaklaşımımız",
       "imageAlt": "Doğal peyzaj içinde taş yürüyüş yolu ve yemyeşil bahçe"
     },
     "stats": {
-      "label": "Sayılarla Flora Adında",
+      "label": "Sayılarla Flora Studio",
       "items": {
         "experience": "Yıllık Tecrübe",
         "projects": "Tamamlanan Proje",
@@ -289,7 +293,7 @@
     "founder": {
       "label": "Kurucunun Yaklaşımı",
       "quote": "Peyzaj bizim için yalnızca bitki yerleştirmek değil, bir yaşam deneyimi tasarlamaktır.",
-      "name": "Flora Adında",
+      "name": "Flora Studio",
       "role": "Kurucu & Peyzaj Tasarım Ekibi",
       "imageAlt": "Peyzaj tasarım stüdyosunda çalışan ekip"
     },
@@ -363,6 +367,10 @@
   },
 
   "projects": {
+    "meta": {
+      "title": "Projelerimiz | Flora Studio",
+      "description": "Villa bahçeleri, otel peyzajları, kurumsal alanlar ve teras bahçeleri için Flora Studio tarafından tasarlanan seçili peyzaj projelerini keşfedin."
+    },
     "paths": {
       "projects": "projelerimiz"
     },
@@ -434,7 +442,7 @@
     "approach": {
       "label": "Tasarım Yaklaşımı"
     },
-     "gallery": {
+    "gallery": {
       "label": "Proje Galerisi",
       "viewAll": "Tüm Görselleri Gör",
       "close": "Galeriyi kapat",
@@ -443,6 +451,69 @@
     },
     "details": {
       "label": "Projede Öne Çıkan Detaylar"
+    }
+  },
+
+  "contact": {
+    "meta": {
+      "title": "İletişim | Flora Studio",
+      "description": "Peyzaj tasarımı, uygulama ve danışmanlık projeleriniz için Flora Studio ile iletişime geçin."
+    },
+    "hero": {
+      "label": "İletişim",
+      "title": "İletişim",
+      "description": "Bir projeniz mi var? Peyzaj tasarımı, uygulama veya danışmanlık için bizimle iletişime geçin.",
+      "location": "İzmir / Türkiye",
+      "phone": "+90 232 123 45 67",
+      "phoneHref": "+902321234567",
+      "email": "hello@floraadinda.com",
+      "imageAlt": "Akdeniz bitkileriyle tasarlanmış doğal bahçe yolu"
+    },
+
+    "form": {
+      "title": "Yeni bir proje hakkında konuşalım.",
+      "description": "Villa bahçeleri, otel peyzajları, kurumsal kampüsler, teras bahçeleri ve özel projeler.",
+      "fields": {
+        "name": "Ad Soyad",
+        "email": "E-posta",
+        "phone": "Telefon",
+        "projectType": "Proje Türü",
+        "projectTypePlaceholder": "Proje türü seçin",
+        "message": "Mesaj"
+      },
+      "options": {
+        "villa": "Villa Bahçesi",
+        "hotel": "Otel Peyzajı",
+        "commercial": "Kurumsal Alan",
+        "terrace": "Teras Bahçesi",
+        "consultancy": "Danışmanlık"
+      },
+      "submit": "Gönder"
+    },
+    "closing": {
+      "areasTitle": "Çalışma Alanlarımız",
+
+      "cities": [
+        "İstanbul",
+        "Ankara",
+        "İzmir",
+        "Bursa",
+        "Antalya",
+        "Muğla",
+        "Sapanca"
+      ],
+
+      "instagram": {
+        "title": "Güncel projelerimizi takip edin.",
+        "handle": "@floraadinda",
+        "button": "Instagram"
+      },
+
+      "cta": {
+        "title": "Birlikte çalışalım",
+        "description": "Hayalinizdeki dış mekanı birlikte tasarlayalım.",
+        "button": "WhatsApp'tan Ulaş"
+      }
     }
   }
 }

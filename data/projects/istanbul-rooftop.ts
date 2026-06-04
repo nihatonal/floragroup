@@ -299,9 +299,9 @@ export const istanbulRooftop: Project = {
 
   seo: {
     title: {
-      tr: "İstanbul Çatı Terası | Flora Adında",
-      en: "Istanbul Rooftop Terrace | Flora Adında",
-      ru: "Терраса на крыше в Стамбуле | Flora Adında",
+      tr: "İstanbul Çatı Terası | Flora Studio",
+      en: "Istanbul Rooftop Terrace | Flora Studio",
+      ru: "Терраса на крыше в Стамбуле | Flora Studio",
     },
 
     description: {

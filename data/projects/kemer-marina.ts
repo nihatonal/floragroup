@@ -298,9 +298,9 @@ export const kemerMarina: Project = {
 
   seo: {
     title: {
-      tr: "Kemer Marina Residence Peyzajı | Flora Adında",
-      en: "Kemer Marina Residence Landscape | Flora Adında",
-      ru: "Ландшафт резиденции Kemer Marina | Flora Adında",
+      tr: "Kemer Marina Residence Peyzajı | Flora Studio",
+      en: "Kemer Marina Residence Landscape | Flora Studio",
+      ru: "Ландшафт резиденции Kemer Marina | Flora Studio",
     },
 
     description: {

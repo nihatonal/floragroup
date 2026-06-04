@@ -298,9 +298,9 @@ details: {
 
   seo: {
   title: {
-    tr: 'Sapanca Göl Evi Peyzajı | Flora Adında',
-    en: 'Sapanca Lake House Landscape | Flora Adında',
-    ru: 'Ландшафт дома у озера в Сапандже | Flora Adında',
+    tr: 'Sapanca Göl Evi Peyzajı | Flora Studio',
+    en: 'Sapanca Lake House Landscape | Flora Studio',
+    ru: 'Ландшафт дома у озера в Сапандже | Flora Studio',
   },
 
   description: {

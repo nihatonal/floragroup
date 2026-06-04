@@ -297,9 +297,9 @@ export const cesmeSahil: Project = {
 
   seo: {
     title: {
-      tr: "Çeşme Sahil Villası Peyzajı | Flora Adında",
-      en: "Çeşme Coastal Villa Landscape | Flora Adında",
-      ru: "Ландшафт прибрежной виллы в Чешме | Flora Adında",
+      tr: "Çeşme Sahil Villası Peyzajı | Flora Studio",
+      en: "Çeşme Coastal Villa Landscape | Flora Studio",
+      ru: "Ландшафт прибрежной виллы в Чешме | Flora Studio",
     },
 
     description: {

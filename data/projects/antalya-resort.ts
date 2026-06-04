@@ -299,9 +299,9 @@ export const antalyaResort: Project = {
 
   seo: {
     title: {
-      tr: "Antalya Resort Peyzajı | Flora Adında",
-      en: "Antalya Resort Landscape | Flora Adında",
-      ru: "Ландшафт курорта в Анталии | Flora Adında",
+      tr: "Antalya Resort Peyzajı | Flora Studio",
+      en: "Antalya Resort Landscape | Flora Studio",
+      ru: "Ландшафт курорта в Анталии | Flora Studio",
     },
 
     description: {

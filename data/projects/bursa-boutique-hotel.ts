@@ -300,9 +300,9 @@ details: {
 
 seo: {
   title: {
-    tr: "Bursa Butik Otel Bahçesi | Flora Adında",
-    en: "Bursa Boutique Hotel Garden | Flora Adında",
-    ru: "Сад бутик-отеля в Бурсе | Flora Adında",
+    tr: "Bursa Butik Otel Bahçesi | Flora Studio",
+    en: "Bursa Boutique Hotel Garden | Flora Studio",
+    ru: "Сад бутик-отеля в Бурсе | Flora Studio",
   },
 
   description: {

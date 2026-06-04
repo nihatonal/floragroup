@@ -298,9 +298,9 @@ export const bodrumTeras: Project = {
 
   seo: {
     title: {
-      tr: "Bodrum Teras Bahçesi | Flora Adında",
-      en: "Bodrum Terrace Garden | Flora Adında",
-      ru: "Террасный сад в Бодруме | Flora Adında",
+      tr: "Bodrum Teras Bahçesi | Flora Studio",
+      en: "Bodrum Terrace Garden | Flora Studio",
+      ru: "Террасный сад в Бодруме | Flora Studio",
     },
 
     description: {

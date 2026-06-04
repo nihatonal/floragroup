@@ -8,7 +8,7 @@ const partners = [
   'Novaterra',
   'Greenline',
   'Botanika Studio',
-  'Flora Group',
+  'Flora Studio',
   'Urban Garden',
   'Eco Landscape',
   'Villa Verde',

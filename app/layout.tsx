@@ -23,11 +23,11 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   metadataBase: new URL("https://floraadinda.com"),
   title: {
-    default: "Flora Adında | Premium Peyzaj ve Flora Tasarımı",
-    template: "%s | Flora Adında",
+    default: "Flora Studio | Premium Peyzaj ve Flora Tasarımı",
+    template: "%s | Flora Studio",
   },
   description:
-    "Flora Adında; peyzaj mimarisi, bahçe tasarımı ve uygulama hizmetleriyle doğayla uyumlu, zamansız yaşam alanları tasarlar.",
+    "Flora Studio; peyzaj mimarisi, bahçe tasarımı ve uygulama hizmetleriyle doğayla uyumlu, zamansız yaşam alanları tasarlar.",
   keywords: [
     "peyzaj",
     "peyzaj tasarımı",  
@@ -37,15 +37,15 @@ export const metadata: Metadata = {
     "villa bahçesi",
     "premium peyzaj",
   ],
-  authors: [{ name: "Flora Adında" }],
-  creator: "Flora Adında",
-  publisher: "Flora Adında",
+  authors: [{ name: "Flora Studio" }],
+  creator: "Flora Studio",
+  publisher: "Flora Studio",
   openGraph: {
     type: "website",
     locale: "tr_TR",
     url: "https://floraadinda.com",
-    siteName: "Flora Adında",
-    title: "Flora Adında | Premium Peyzaj ve Flora Tasarımı",
+    siteName: "Flora Studio",
+    title: "Flora Studio | Premium Peyzaj ve Flora Tasarımı",
     description:
       "Doğayla uyum içinde, zamansız mekanlar tasarlayan premium peyzaj ve flora tasarım stüdyosu.",
     images: [
@@ -53,13 +53,13 @@ export const metadata: Metadata = {
         url: "/images/og/flora-adinda-og.jpg",
         width: 1200,
         height: 630,
-        alt: "Flora Adında Landscape Design",
+        alt: "Flora Studio Landscape Design",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Flora Adında | Premium Peyzaj ve Flora Tasarımı",
+    title: "Flora Studio | Premium Peyzaj ve Flora Tasarımı",
     description:
       "Doğayla uyum içinde, zamansız mekanlar tasarlayan premium peyzaj ve flora tasarım stüdyosu.",
     images: ["/images/og/flora-adinda-og.jpg"],
