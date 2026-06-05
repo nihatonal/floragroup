@@ -61,10 +61,10 @@ export default function Footer() {
                   {t("navigation.projects")}
                 </Link>
                 <Link
-                  href={`/${locale}/galeri`}
+                  href={`/${locale}/journal`}
                   className="block hover:text-flora-champagne"
                 >
-                  {t("navigation.gallery")}
+                  {t("navigation.journal")}
                 </Link>
               </div>
             </div>
