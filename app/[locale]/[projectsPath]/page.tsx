@@ -38,6 +38,7 @@ export async function generateMetadata({ params }: ProjectsPageProps) {
 export default async function ProjectsPage({ params }: ProjectsPageProps) {
   const { locale } = await params;
 
+  
   if (!locales.includes(locale as Locale)) {
     notFound();
   }

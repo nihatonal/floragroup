@@ -19,7 +19,7 @@ export default function Header() {
   const navItems = [
     { label: t("nav.about"), href: `/${locale}/${t("paths.about")}` },
     { label: t("nav.projects"), href: `/${locale}/${t("paths.projects")}` },
-    { label: t("nav.gallery"), href: `/${locale}/${t("paths.gallery")}` },
+    { label: t("nav.journal"), href: `/${locale}/${t("paths.journal")}` },
     { label: t("nav.contact"), href: `/${locale}/${t("paths.contact")}` },
   ];
 

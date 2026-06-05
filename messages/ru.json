@@ -7,13 +7,13 @@
     "nav": {
       "about": "О нас",
       "projects": "Проекты",
-      "gallery": "Галерея",
+      "journal": "Журнал",
       "contact": "Контакты"
     },
     "paths": {
       "about": "o-nas",
       "projects": "proekty",
-      "gallery": "galereya",
+      "journal": "zhurnal",
       "contact": "kontakt"
     },
     "menu": {
@@ -462,7 +462,7 @@
       "location": "Измир / Турция",
       "phone": "+90 232 123 45 67",
       "phoneHref": "+902321234567",
-      "email": "hello@floraadinda.com",
+      "email": "hello@florastudio.com",
       "imageAlt": "Садовая дорожка с средиземноморскими растениями"
     },
     "form": {
@@ -510,5 +510,15 @@
         "button": "Написать в WhatsApp"
       }
     }
+  },
+  "journal": {
+    "meta": {
+      "title": "Журнал | Flora Adında",
+      "description": "Редакционные материалы о ландшафтной архитектуре, озеленении и жизни на открытом воздухе."
+    },
+    "eyebrow": "Journal",
+    "title": "Скоро",
+    "description": "Мы готовим редакционные материалы о ландшафтной архитектуре, озеленении и жизни на открытом воздухе.",
+    "comingSoon": "Раздел находится в разработке"
   }
 }

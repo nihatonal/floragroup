@@ -7,13 +7,13 @@
     "nav": {
       "about": "About",
       "projects": "Projects",
-      "gallery": "Gallery",
+      "journal": "Journal",
       "contact": "Contact"
     },
     "paths": {
       "about": "about",
       "projects": "projects",
-      "gallery": "gallery",
+      "journal": "journal",
       "contact": "contact"
     },
     "menu": {
@@ -462,7 +462,7 @@
       "location": "Izmir / Turkey",
       "phone": "+90 232 123 45 67",
       "phoneHref": "+902321234567",
-      "email": "hello@floraadinda.com",
+      "email": "hello@florastudio.com",
       "imageAlt": "Natural garden pathway designed with Mediterranean planting"
     },
 
@@ -511,5 +511,15 @@
         "button": "Contact via WhatsApp"
       }
     }
+  },
+  "journal": {
+    "meta": {
+      "title": "Journal | Flora Adında",
+      "description": "Editorial content on landscape architecture, planting design and outdoor living."
+    },
+    "eyebrow": "Journal",
+    "title": "Coming Soon",
+    "description": "We are curating editorial content on landscape architecture, planting design and outdoor living.",
+    "comingSoon": "Currently in development"
   }
 }

@@ -7,13 +7,13 @@
     "nav": {
       "about": "Hakkımızda",
       "projects": "Projelerimiz",
-      "gallery": "Galeri",
+      "journal": "Journal",
       "contact": "İletişim"
     },
     "paths": {
       "about": "hakkimizda",
       "projects": "projelerimiz",
-      "gallery": "galeri",
+      "journal": "journal",
       "contact": "iletisim"
     },
     "menu": {
@@ -466,7 +466,7 @@
       "location": "İzmir / Türkiye",
       "phone": "+90 232 123 45 67",
       "phoneHref": "+902321234567",
-      "email": "hello@floraadinda.com",
+      "email": "hello@florastudio.com",
       "imageAlt": "Akdeniz bitkileriyle tasarlanmış doğal bahçe yolu"
     },
 
@@ -515,5 +515,15 @@
         "button": "WhatsApp'tan Ulaş"
       }
     }
+  },
+  "journal": {
+    "meta": {
+      "title": "Journal | Flora Adında",
+      "description": "Peyzaj mimarlığı, bitkilendirme tasarımı ve dış mekan yaşamı üzerine editoryal içerikler."
+    },
+    "eyebrow": "Journal",
+    "title": "Yakında",
+    "description": "Peyzaj mimarlığı, bitkilendirme tasarımı ve dış mekan yaşamı üzerine editoryal içerikler hazırlıyoruz.",
+    "comingSoon": "Yapım aşamasında"
   }
 }

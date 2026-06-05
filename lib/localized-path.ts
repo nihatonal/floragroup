@@ -12,10 +12,10 @@ export const routeTranslations = {
     en: 'projects',
     ru: 'proekty',
   },
-  gallery: {
-    tr: 'galeri',
-    en: 'gallery',
-    ru: 'galereya',
+  journal: {
+    tr: 'journal',
+    en: 'journal',
+    ru: 'zhurnal',
   },
   contact: {
     tr: 'iletisim',
