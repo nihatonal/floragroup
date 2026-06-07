@@ -1,12 +1,17 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import { Maximize2, X, ChevronLeft, ChevronRight } from "lucide-react";
-import { useTranslations } from "next-intl";
-import { useState } from "react";
-import { type Locale, type Project } from "@/types/project";
-import { cn } from "@/lib/utils";
-import ImageParallax from "@/components/motion/ImageParallax";
+import Image from 'next/image';
+import { Maximize2 } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+import { useState } from 'react';
+
+import Lightbox from 'yet-another-react-lightbox';
+import Thumbnails from 'yet-another-react-lightbox/plugins/thumbnails';
+
+import 'yet-another-react-lightbox/styles.css';
+import 'yet-another-react-lightbox/plugins/thumbnails.css';
+
+import { type Locale, type Project } from '@/types/project';
 
 type ProjectGalleryProps = {
   locale: Locale;
@@ -17,30 +22,20 @@ export default function ProjectGallery({
   locale,
   project,
 }: ProjectGalleryProps) {
-  const t = useTranslations("projectDetail.gallery");
+  const t = useTranslations('projectDetail.gallery');
+
   const images = [
     project.images.hero,
     project.images.cover,
     ...project.images.gallery,
   ];
 
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [isOpen, setIsOpen] = useState(false);
+  const [index, setIndex] = useState(-1);
 
-  const openLightbox = (index: number) => {
-    setActiveIndex(index);
-    setIsOpen(true);
-  };
-
-  const closeLightbox = () => setIsOpen(false);
-
-  const next = () => {
-    setActiveIndex((value) => (value + 1) % images.length);
-  };
-
-  const prev = () => {
-    setActiveIndex((value) => (value === 0 ? images.length - 1 : value - 1));
-  };
+  const slides = images.map((image) => ({
+    src: image,
+    alt: project.title[locale],
+  }));
 
   return (
     <section className="bg-flora-ivory text-flora-forest">
@@ -49,7 +44,7 @@ export default function ProjectGallery({
           <div className="mb-8 flex items-center justify-between gap-6">
             <div className="flex flex-1 items-center gap-6">
               <p className="shrink-0 text-[11px] font-semibold uppercase tracking-[0.24em] text-flora-bronze">
-                {t("label")}
+                {t('label')}
               </p>
 
               <span className="hidden h-px flex-1 bg-flora-forest/10 md:block" />
@@ -57,10 +52,10 @@ export default function ProjectGallery({
 
             <button
               type="button"
-              onClick={() => openLightbox(0)}
+              onClick={() => setIndex(0)}
               className="hidden items-center gap-3 text-[11px] font-bold uppercase tracking-[0.22em] text-flora-forest transition hover:text-flora-bronze md:inline-flex"
             >
-              {t("viewAll")}
+              {t('viewAll')}
               <Maximize2 size={16} strokeWidth={1.4} />
             </button>
           </div>
@@ -68,7 +63,7 @@ export default function ProjectGallery({
           <div className="grid gap-4 md:grid-cols-3">
             <button
               type="button"
-              onClick={() => openLightbox(0)}
+              onClick={() => setIndex(0)}
               className="group relative aspect-[16/10] overflow-hidden rounded-[1.25rem] md:row-span-2 md:aspect-auto"
             >
               <Image
@@ -81,16 +76,16 @@ export default function ProjectGallery({
               />
             </button>
 
-            {images.slice(1, 5).map((image, index) => (
+            {images.slice(1, 5).map((image, imageIndex) => (
               <button
                 key={image}
                 type="button"
-                onClick={() => openLightbox(index + 1)}
+                onClick={() => setIndex(imageIndex + 1)}
                 className="group relative aspect-[16/8.7] overflow-hidden rounded-[1.25rem]"
               >
                 <Image
                   src={image}
-                  alt={`${project.title[locale]} ${index + 2}`}
+                  alt={`${project.title[locale]} ${imageIndex + 2}`}
                   fill
                   quality={75}
                   sizes="(max-width: 768px) 100vw, 28vw"
@@ -102,85 +97,42 @@ export default function ProjectGallery({
 
           <button
             type="button"
-            onClick={() => openLightbox(0)}
+            onClick={() => setIndex(0)}
             className="mt-6 inline-flex items-center gap-3 text-[11px] font-bold uppercase tracking-[0.22em] text-flora-forest md:hidden"
           >
-            {t("viewAll")}
+            {t('viewAll')}
             <Maximize2 size={16} strokeWidth={1.4} />
           </button>
         </div>
       </div>
 
-      {isOpen && (
-        <div className="fixed inset-0 z-[100] bg-flora-night/95 text-flora-ivory">
-          <button
-            type="button"
-            onClick={closeLightbox}
-            aria-label={t("close")}
-            className="absolute right-5 top-5 z-20 grid size-12 place-items-center rounded-full border border-white/20 bg-white/10 backdrop-blur-md"
-          >
-            <X size={22} strokeWidth={1.4} />
-          </button>
-
-          <button
-            type="button"
-            onClick={prev}
-            aria-label={t("previous")}
-            className="absolute left-5 top-1/2 z-20 grid size-12 -translate-y-1/2 place-items-center rounded-full border border-white/20 bg-white/10 backdrop-blur-md"
-          >
-            <ChevronLeft size={24} strokeWidth={1.4} />
-          </button>
-
-          <button
-            type="button"
-            onClick={next}
-            aria-label={t("next")}
-            className="absolute right-5 top-1/2 z-20 grid size-12 -translate-y-1/2 place-items-center rounded-full border border-white/20 bg-white/10 backdrop-blur-md"
-          >
-            <ChevronRight size={24} strokeWidth={1.4} />
-          </button>
-
-          <div className="flex h-full flex-col px-5 pb-6 pt-20">
-            <div className="relative flex-1 overflow-hidden rounded-[1.5rem]">
-              <Image
-                src={images[activeIndex]}
-                alt={`${project.title[locale]} ${activeIndex + 1}`}
-                fill
-                quality={90}
-                sizes="100vw"
-                className="object-contain"
-              />
-            </div>
-
-            <div className="mt-5 flex items-center gap-3 overflow-x-auto pb-1">
-              {images.map((image, index) => (
-                <button
-                  key={image}
-                  type="button"
-                  onClick={() => setActiveIndex(index)}
-                  className={cn(
-                    "relative h-16 w-24 shrink-0 overflow-hidden rounded-xl border transition md:h-20 md:w-32",
-                    activeIndex === index
-                      ? "border-flora-bronze"
-                      : "border-white/15 opacity-55 hover:opacity-100",
-                  )}
-                >
-                  <ImageParallax offset={32} className="absolute inset-0">
-                    <Image
-                      src={image}
-                      alt={`${project.title[locale]} thumbnail ${index + 1}`}
-                      fill
-                      quality={65}
-                      sizes="128px"
-                      className="object-cover"
-                    />
-                  </ImageParallax>
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
-      )}
+      <Lightbox
+        open={index >= 0}
+        close={() => setIndex(-1)}
+        index={index}
+        slides={slides}
+        plugins={[Thumbnails]}
+        controller={{
+          closeOnBackdropClick: true,
+        }}
+        thumbnails={{
+          position: 'bottom',
+          width: 96,
+          height: 64,
+          border: 1,
+          borderRadius: 12,
+          padding: 2,
+          gap: 10,
+        }}
+        styles={{
+          container: {
+            backgroundColor: 'rgba(15, 13, 9, 0.96)',
+          },
+          thumbnailsContainer: {
+            backgroundColor: 'rgba(15, 13, 9, 0.88)',
+          },
+        }}
+      />
     </section>
   );
 }

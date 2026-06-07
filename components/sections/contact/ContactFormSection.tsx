@@ -29,7 +29,7 @@ export default function ContactFormSection() {
   };
 
   return (
-    <section className="bg-flora-ivory text-flora-forest">
+    <section className="bg-flora-ivory text-flora-forest" id="contact-form">
       <div className="mx-auto grid max-w-[1480px] border-y border-flora-forest/10 px-5 py-16 md:grid-cols-[0.75fr_1.25fr] md:px-16 md:py-24">
         <div className="pb-12 md:border-r md:border-flora-forest/10 md:pb-0 md:pr-16">
           <h2 className="max-w-[10ch] font-display text-5xl leading-[0.95] tracking-[-0.06em] md:text-7xl">

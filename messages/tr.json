@@ -37,7 +37,7 @@
       "title": "Navigasyon",
       "about": "Hakkımızda",
       "projects": "Projelerimiz",
-       "journal": "Journal"
+      "journal": "Journal"
     },
     "contact": {
       "title": "İletişim",
@@ -525,5 +525,17 @@
     "title": "Yakında",
     "description": "Peyzaj mimarlığı, bitkilendirme tasarımı ve dış mekan yaşamı üzerine editoryal içerikler hazırlıyoruz.",
     "comingSoon": "Yapım aşamasında"
+  },
+  "floatingContact": {
+    "open": "İletişim seçeneklerini aç",
+    "close": "Kapat",
+    "button": "İletişim",
+    "eyebrow": "İletişim",
+    "title": "Birlikte güzel bir mekan tasarlayalım",
+    "whatsapp": "WhatsApp",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "form": "İletişim Formu",
+    "responseTime": "Genellikle 24 saat içinde dönüş yapıyoruz."
   }
 }

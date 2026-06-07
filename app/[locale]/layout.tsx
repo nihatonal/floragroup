@@ -1,11 +1,12 @@
-import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
-import { hasLocale } from 'next-intl';
-import { notFound } from 'next/navigation';
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+import { hasLocale } from "next-intl";
+import { notFound } from "next/navigation";
 
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
-import { locales } from '@/i18n/routing';
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import { locales } from "@/i18n/routing";
+import FloatingContact from "@/components/common/FloatingContact";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -18,10 +19,7 @@ type Props = {
   }>;
 };
 
-export default async function LocaleLayout({
-  children,
-  params,
-}: Props) {
+export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
 
   if (!hasLocale(locales, locale)) {
@@ -35,6 +33,7 @@ export default async function LocaleLayout({
       <Header />
       <main>{children}</main>
       <Footer />
+      <FloatingContact />
     </NextIntlClientProvider>
   );
 }

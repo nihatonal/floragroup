@@ -521,5 +521,17 @@
     "title": "Coming Soon",
     "description": "We are curating editorial content on landscape architecture, planting design and outdoor living.",
     "comingSoon": "Currently in development"
+  },
+  "floatingContact": {
+    "open": "Open contact options",
+    "close": "Close",
+    "button": "Contact",
+    "eyebrow": "Contact",
+    "title": "Let's Create Something Beautiful",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "phone": "Phone",
+    "form": "Contact Form",
+    "responseTime": "We usually respond within 24 hours."
   }
 }
